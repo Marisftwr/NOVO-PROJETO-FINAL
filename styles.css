@@ -1,0 +1,369 @@
+/*Página Inicial antes do usuário logar*/
+/*Header*/
+#x1 {
+     max-height: 165px;
+     max-width: 700px;
+     min-height:40px;
+     min-width: 250px;}
+
+#x2 {height:20px;
+     width:20px}
+.shadowp-3mb-5bg-body-tertiaryrounded {height:250px;
+     width:1900px}
+
+a {font-family: 'Noto Serif Ahom',serif}
+
+.bodyHome {background-image: url(Background.png);
+      background-repeat: no-repeat;
+      background-size: 2000px 1000px;
+
+      
+}
+.cardtext-bg-primarymb-3 {
+  width: 18rem;
+  background-color: aliceblue;
+}
+
+hr{
+     min-width: 20%;
+     max-width: 50%;
+}
+
+
+/*Quem somos*/
+
+
+.quicksand-regular {
+     font-family: "Quicksand", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 500;
+     font-style: bold;
+     color:#ddcd8b;
+     text-shadow:  1px 1px #d4a64f;
+     text-align: center;
+   }
+.quicksand-regular2 {
+     font-family: "Quicksand", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 300;
+     font-style: normal;
+     color:aliceblue;
+     margin: auto;
+     text-align: center
+
+   }
+
+  /*Div de como usar*/ 
+
+#divComoUsar {background-color: #d4a64f;
+          }
+#printInsc {
+     min-width: 20%;
+     min-height: 25%;
+     max-width: 30%;
+     min-height: 35%;
+     padding-left: 30px;
+ 
+     
+}
+
+#linhaComoUsar {
+     color:#341035;
+     float:left
+}
+
+/*imagem flutuante da biblioteca*/
+#x11 {float:right;
+      height: 25%;
+      width: 25%;
+      border: 3px double;
+      border-radius: 80%; 
+      border-color: #57245b;  }
+
+/*para alinhar o texto à esquerda*/
+/*Texto na primeira div (quem somos e o que o site pode fornecer)*/
+#x10 {text-align: justify;
+      }
+/*Texto dos tópicos*/
+#x12 {text-align: justify;
+     font-size: 22px
+      }
+/*Texto da segunda div (como usar)*/
+#x13 {color: #875396;
+      text-shadow: 1px 1px #471b53;
+      text-align: justify;}
+/*Fim de "para alinhar o texto á esquerda*/
+/*Div a ser mostrada quando apertar no link de entrar*/
+#x7 {min-height: 600px;
+     min-width: 500px;
+     max-height: 500px;
+     max-width: 400px;
+     background-color:#57245b;
+     margin: auto;
+     text-align: center;
+     border-radius: 25px;
+     display: none;
+     }
+   
+
+#Entrar {padding-right: 30px;
+        }
+/*Página de se inscrever*/
+/*body*/
+
+.bodyInsc {background-color: #57245b;}
+
+.Insc {margin:auto;
+text-align:center ;} 
+
+
+/*B0tão para se inscrever com x*/
+#x3{margin-left: 10px;
+     }
+
+/*B0tão para se inscrever com x*/
+
+#x4 {margin-left: 10px;
+}
+
+/*Página home*/
+.linhaHome {width: 40%;}
+
+     /*Parte do catálogo de livros da página home*/
+     #x6 {
+          height: 40%;
+          width: 20%;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      
+     }
+     #divLivros {background-color: #1f0d24;}
+     #TamanhoFilt{
+          font-size: 18px;
+     }
+     #cardLivro {
+          background-color: #471b53;
+          border-radius: 5%;
+     }
+
+     #fotoLivro {
+          border-radius: 5%
+     }
+     #cardLivro:hover { border: 2px solid rgba(221, 185, 23, 0.801);  }
+
+/*Nav lateral a partir do click no menu*/
+#mySidenav {background-color: #d4a64f;
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     right: 0px;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+     font-size: 20px;
+     text-align: center;}
+
+#fechar {
+     height: 40px;
+     width:40px
+}
+
+#config {
+     height: 20px;
+     width: 20px
+}
+
+#BotaoPesquisa {
+     height: 30px;
+     width: 30px
+}
+
+/*Configuração carrossel imagem*/
+.bodyRoxo{ background-color: #472252;}
+
+/*Página de um livro específica que foi clicado no home*/
+
+#x14 {height: 30%;
+     width: 25%;
+     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+     /*Parte de comentários do livro em específico*/
+.nome {font-size: 22px;
+       font-family: 'quicksand', sans-serif;
+       font-style: bold;
+       color: aliceblue;
+}
+
+.post-comment .list{
+     background-color: #471b53;
+     border-radius: 15px;
+     box-shadow: 0 2px 2px #100613
+}
+
+.comment-box .user .image img{
+     height:20%;
+     width:20%;
+     border-radius: 50%
+}
+.comment-box textarea {
+     background-color: #f3e0f8;
+     border-radius: 15px;
+     box-shadow: 0 2px 2px #100613;
+}
+
+.user .user-image .img {width: 25px;
+     height: 25px;
+     border-radius: 50%
+}
+
+.image {width: 250px;
+     height: 250px}
+
+textarea {border-radius: 10px;}
+
+#commentContent {
+     padding-right: 300px;
+}
+.card-text{
+     font-family: 'Quicksand', sans-serif ;
+}
+
+.divComment {
+     border-radius: 10px;
+     background-color: #4b1b4d;
+     height: auto;
+     margin-bottom: 50px;
+     width: 1000px;
+
+
+}
+
+#x18 {
+     background-color: #9568a0;
+
+}
+/*Descrição do livro e avaliações*/
+#x17 {
+     text-align:justify
+}
+
+#x19 {
+     text-align: justify;
+     padding-left: 15%;
+     
+}
+
+.rate {
+     border-bottom-right-radius: 12px;
+     border-bottom-left-radius: 12px
+ }
+ 
+ .rating {
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: center
+ }
+ 
+ .rating>input {
+     display: none
+ }
+ 
+ .rating>label {
+     position: relative;
+     width: 1em;
+     font-size: 30px;
+     font-weight: 300;
+     color: #380f44;
+     cursor: pointer
+ }
+ 
+ .rating>label::before {
+     content: "\2605";
+     position: absolute;
+     opacity: 0
+ }
+ 
+ .rating>label:hover:before,
+ .rating>label:hover~label:before {
+     opacity: 1 !important
+ }
+ 
+ .rating>input:checked~label:before {
+     opacity: 1
+ }
+ 
+ .rating:hover>input:checked~label:before {
+     opacity: 0.4
+ }
+ 
+ .buttons {
+     top: 36px;
+     position: relative;
+     margin-right:40%
+ }
+ 
+/*Página de Perfil*/
+#mySidenav2 {background-color: #341035;
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     right: 0px;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+     font-size: 20px;
+     text-align: center;}
+
+.bodyPP {
+     background-color: #4b1b4d;
+}
+
+.HeaderUser {
+     width: 70%;
+     height: 300px;
+     background-color: #e7c695;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#ProfilePic {
+     border-radius: 50%;
+     border: #100613;
+     border-width: 2px;
+     width: 12%;
+     height: 50%;
+     margin-top: 100px;
+     margin-left: 20px
+}
+
+.linhaV {
+     border-right: 1px solid rgb(255, 255, 255);
+     height:800px;
+   }
+
+.card-link {
+     font-family: 'quicksand', sans-serif;
+     color:#f3e0f8
+}
+
+.anotacoes {
+     float: right;
+     margin-left: 900px ;
+}
+.livLista {
+     float: right;
+     margin-right:40%
+}
+
+.livrosLidos {
+     float: right;
+     margin-right:40%
+}
+/*Página em qe o usuário irá ler*/
+
+#pdf{ width:800px ;
+      height:1000px;
+      margin-left: 550px;
+}
