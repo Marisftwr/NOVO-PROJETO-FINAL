@@ -25,7 +25,7 @@ include('protect.php')
             <img id="x1" class="img-fluid" src="LogoSite.png">
           </a>
           <li class="col-sm-2">
-            <a class="nav-link" href="Home.html">Home</a>
+            <a class="nav-link" href="Home.php">Home</a>
           </li>
             <li class="col-sm-2">
               <a class="nav-link" href="#">Destaques</a>
@@ -330,3 +330,4 @@ include('protect.php')
         </div>
 </body>
 </html>
+
