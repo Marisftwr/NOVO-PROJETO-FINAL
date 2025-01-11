@@ -10,8 +10,8 @@ include('protect.php')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clube literário - Home</title>
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles1.css">
-    <link rel='stylesheet' href="bootstrap copy.css">
+    <link rel='stylesheet' href="styles.css">
+    <link rel='stylesheet' href="bootstrap copy1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -107,9 +107,11 @@ include('protect.php')
       <!--Fim nav lateral-->
         <!--Catálogo de livros-->
         <div class="container-fluid" id="divLivros"><br>
-          <h1 class="quicksand-regular">
-            Livros
-          </h1>
+          <div id="divLiv" class="container-fluid">
+            <h1 class="quicksand-regular">
+              Livros
+            </h1>
+          </div><br>
           <ul class="row sm-3">
           <h3 id="x17" class="quicksand-regular">
             Filtros:
@@ -356,7 +358,7 @@ include('protect.php')
               </div>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/71Ez-SH-q5L._SL1500_.jpg" alt="Card image cap">
+                    <img id="fotoLivro" class="card-img-top" src="https://m.media-amazon.com/images/I/71Ez-SH-q5L._SL1500_.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Tudo bem quando termina bem</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
@@ -414,7 +416,7 @@ include('protect.php')
               </div>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/81uiON7YuCL._SL1378_.jpg" alt="Card image cap">
+                    <img id="fotoLivro" style="height: 22rem;"  class="card-img-top" src="https://m.media-amazon.com/images/I/81uiON7YuCL._SL1378_.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Ricardo III</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
@@ -432,14 +434,242 @@ include('protect.php')
               </div>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/81dUyuZqKPL._SL1500_.jpg" alt="Card image cap">
+                    <img id="fotoLivro"class="card-img-top" src="https://m.media-amazon.com/images/I/81dUyuZqKPL._SL1500_.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Primeiro Fausto</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
               </div>
-            </div>                            
+            </div>
+            <div class="row">
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/61QXWuU+YWS._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Poesias inéditas</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro" style="height: 23rem;" class="card-img-top" src="https://tocalivros.s3.amazonaws.com/images/audiolivros/350/o/s/os-sertoes-euclides-da-cunha-juliana-muscovick-1135888.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Os sertões</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro" style="height: 20rem;"  class="card-img-top" src="https://m.media-amazon.com/images/I/91AvfvzrKuL._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">A tragédia de Hamlet, o príncipe da Dinamarca</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"class="card-img-top" src="https://m.media-amazon.com/images/I/81yB3mQGm7L._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MacBeth</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/81m1emiSp-S._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">O cortiço</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro" style="height: 22rem;"  class="card-img-top" src="https://m.media-amazon.com/images/I/61tlNNO6kRL._SL1050_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">A pianista</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/41b6E0pDLCL.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">A mulher de preto</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro" style="height: 20rem;" class="card-img-top" src="https://m.media-amazon.com/images/I/71QLwli7GUL._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">A metamorfose</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>                         
+            <div class="row">
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/71M+gr7oFeL._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">As primaveras</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro" style="height: 22rem;"  class="card-img-top" src="https://m.media-amazon.com/images/I/816Lq8xxPlL._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Os Maias</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/913JKLHKN1L._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">A cartomante</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro" style="height: 22rem;" class="card-img-top" src="https://m.media-amazon.com/images/I/91IRKga3qTL._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">A tempestade</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>                         
+            <div class="row">
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/91A+plhbEHL._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Da arte poética</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro" style="height: 22rem;"  class="card-img-top" src="https://m.media-amazon.com/images/I/612dfTY2TbL._SL1453_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Diário de bitita</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/71z42zpEwbL._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Quarto de despejo</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"class="card-img-top" src="https://wikifavelas.com.br/images/3/34/Capa_Peda%C3%A7os_da_Fome..jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Pedaços da fome</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>                         
+            <div class="row">
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://carolinamariadejesus.ims.com.br/wp-content/uploads/2024/02/52.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Provérbios</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro" style="height: 22rem;"  class="card-img-top" src="https://carolinamariadejesus.ims.com.br/wp-content/uploads/2024/02/53.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Antologia pessoal</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/719esIW3D7L._SL1297_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Orgulho e Preconceito</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"class="card-img-top" src="https://m.media-amazon.com/images/I/814Y0DO2OZL._SL1297_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Persuasão</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>                         
+            <div class="row">
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788582851050/emma.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Emma</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro" style="height: 22rem;"  class="card-img-top" src="https://m.media-amazon.com/images/I/81eN74IRg4L._SL1297_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Razão e sensibilidade</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://livrariapublica.com.br/capa/lady-susan-e-outras-historias-jane-austen-pdf-B085FXL6HM.webp" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Lady Susan</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">.</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>                                                                
           <br><br>
         </div>
 </body>
