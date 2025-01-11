@@ -1,3 +1,6 @@
+<?php
+session_start()
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,10 +19,12 @@
     <div class="container-fluid">
     <div class="Insc">
     <h1 class="quicksand-regular">Inscreva-se</h1>
-    <form method="post" action="InscrevaSe.php" class="quicksand-regular2">
+    <form method="post" action="cadastro.php" class="quicksand-regular2">
         <label>Nome:</label>
         <input class="form-control" type="text" name="Name" placeholder="Nome">
         <br><br>
+        <label>Data de Nascimento:</label>
+        <input id="Dt" class="form-control" type="date" name="DataNasc"><br><br>
         <label>E-mail:</label>
         <input class="form-control" type="text" name="Email" placeholder="nomeemail@email.com">
         <br><br>
@@ -27,10 +32,9 @@
         <input class="form-control" type="text" name="Username" placeholder="@nomedeusuario">
         <br><br>
         <label>Senha:</label>
-        <input class="form-control" type="text" name="Senha" placeholder="senha123">
+        <input class="form-control" type="password" name="Senha" placeholder="senha123">
         <br><br>
-        <label>Data de Nascimento:</label>
-        <input id="Dt" class="form-control" type="date" name="DataNasc"><br>
+        <button type="submit" value="Submit" class=" btn btn-primary">Inscrever-se</button><br><br>
         <button type="submit" value="Submit" class="btn btn-primary">Inscrever-se com X<img id="x3" src="x-social-media-round-icon.png"></button>
         <button type="submit" value="Submit" class="btn btn-primary">Inscrever-se com G<img id="x4" src="google.png"></button>
 
