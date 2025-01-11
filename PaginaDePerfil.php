@@ -10,7 +10,7 @@ include('protect.php')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles.css">
+    <link rel='stylesheet' href="styles1.css">
     <link rel='stylesheet' href="bootstrap copy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@ include('protect.php')
 <body class="bodyPP">
     <nav class="container-fluid">
         <ul class="row">
-          <a class="col-sm-2">
+          <a class="col-sm-3">
             <img id="x1" src="LogoSite.png">
           </a>
           <li class="col-sm-2">
@@ -50,6 +50,7 @@ include('protect.php')
             <div class="col-sm-1">
             <button class="btn btn-outline-secondary" type="submit" id="" onclick="openNav2()"><img id="x2" src="menu.png"></button>
             </div>
+       </nav>
             <hr class="linhaHome">
             <br><br>
             <div id="mySidenav2" class="sidenav">
@@ -63,7 +64,7 @@ include('protect.php')
                 <a class="quicksand-regular2" href="QuemSomos.html">Quem Somos?</a><br><br>
                 <a class="quicksand-regular2" href="#">Minhas Listas</a><br><br>
                 <a class="quicksand-regular2" href="#">Avaliações</a><br><br>
-                <a class="quicksand-regular2" href="#">Editar Perfil</a><br><br>
+                <a class="quicksand-regular2" href="EditarPerfil.php">Editar Perfil</a><br><br>
                 <a class="quicksand-regular2" href="#">Configurações</a><img id="config" src="configurações.png"><br><br>
                 <a class="quicksand-regular2" href="#">Sair</a><br><br>
             </div>
