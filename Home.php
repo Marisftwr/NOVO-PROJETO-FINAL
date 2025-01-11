@@ -10,7 +10,7 @@ include('protect.php')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clube literário - Home</title>
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles.css">
+    <link rel='stylesheet' href="styles1.css">
     <link rel='stylesheet' href="bootstrap copy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@ include('protect.php')
             <img id="x1" class="img-fluid" src="LogoSite.png">
           </a>
           <li class="col-sm-2">
-            <a class="nav-link" href="Home.php">Home</a>
+            <a class="nav-link" href="Home.html">Home</a>
           </li>
             <li class="col-sm-2">
               <a class="nav-link" href="#">Destaques</a>
@@ -186,27 +186,27 @@ include('protect.php')
               </div>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro" class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro" class="card-img-top" src="https://m.media-amazon.com/images/I/61DouJElapL._SL1335_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">Ressurreição</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
               </div>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro" class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro" class="card-img-top" src="https://m.media-amazon.com/images/I/613D-uzZ8AL._SL1360_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">A mão e a luva</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
               </div>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro" class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro" class="card-img-top" src="https://m.media-amazon.com/images/I/61KDbIA7t6L._SL1360_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">Helena</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
@@ -215,36 +215,36 @@ include('protect.php')
             <div class="row">
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro"  class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/71KjaiJzLAL._SL1354_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">Iaiá Garcia</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
               </div><br>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro"  class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/71OL9RU2tJL._SL1360_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">Memórias póstumas de Brás Cubas</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
               </div>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro"  class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/81mZwQB6JBL._SL1500_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">Casa velha</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
               </div>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro"  class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/61Kt3d+mhuL._SL1360_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">Quincas Borba</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
@@ -253,36 +253,36 @@ include('protect.php')
             <div class="row">
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro"  class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/61Z2bMhGicL._SL1360_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">Dom Casmurro</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
               </div>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro" class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro" class="card-img-top" src="https://m.media-amazon.com/images/I/81Oj0Etf1uL._SL1500_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">Esaú e Jacó</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
               </div>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro"  class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/61R-l9vG27S._SL1500_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">Memorial de Aires</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
               </div>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro" class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro" class="card-img-top" src="https://m.media-amazon.com/images/I/91EFlhvmgNL._SL1500_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">O misterioso caso de Styles</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
@@ -291,43 +291,156 @@ include('protect.php')
             <div class="row">
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro"  class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/A1AyJjCssnL._SL1500_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">O adversário secreto</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
               </div>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro"  class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/91VpEyvWxjL._SL1500_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">Os cinco porquinhos</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
               </div>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro"  class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/71pz1UaMlEL._SL1500_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">Os três ratos e outros contos</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
               </div>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro"  class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/81Zp6MFxIDL._SL1500_.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
+                    <h5 class="card-title">O assassinato no expresso oriente</h5>
                     <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
               </div>
-            </div>      
+            </div>
+            <div class="row">
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/71Jt2eJxI6L._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">A morte no Nilo</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/71SkL5rDqUL._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">A noite das bruxas</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/618-b9Im6dL._SL1457_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Vidas secas</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/71Ez-SH-q5L._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Tudo bem quando termina bem</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://www.lpm.com.br/livros/Imagens/trabalhos_de_amor_perdidos_nova__9788525412386_g.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Trabalhos de amor perdidos</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/915rFCUXeiL._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Sonho de uma noite de verão</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/51O9n2ggXEL._SL1050_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Sonetos</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://images.tcdn.com.br/img/img_prod/1323385/senhora_jose_de_alencar_principis_13711_1_b02b5a25d6c421143388a8d35da5cda0.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Senhora</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="row">
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/719trP22IcL._SL1360_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Romeu e Julieta</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/81uiON7YuCL._SL1378_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Ricardo III</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788582851111/rei-lear.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Rei Lear</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div id="cardLivro" class="card" style="width: 15rem;">
+                    <img id="fotoLivro"  class="card-img-top" src="https://m.media-amazon.com/images/I/81dUyuZqKPL._SL1500_.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Primeiro Fausto</h5>
+                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+            </div>                            
           <br><br>
         </div>
 </body>
 </html>
-
