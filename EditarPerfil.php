@@ -10,8 +10,8 @@ include('protect.php')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles1.css">
-    <link rel='stylesheet' href="bootstrap copy.css">
+    <link rel='stylesheet' href="styles.css">
+    <link rel='stylesheet' href="bootstrap copy1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
