@@ -45,8 +45,8 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         <title>Clube literário</title>
 
         <link rel='stylesheet' href="bootstrap-grid.css">
-        <link rel='stylesheet' href="styles1.css">
-        <link rel='stylesheet' href="bootstrap copy.css">
+        <link rel='stylesheet' href="styles.css">
+        <link rel='stylesheet' href="bootstrap copy1.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -127,6 +127,6 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
           </button>
         </div>
       </div><br><br>
-      <h3 class="quicksand-regular2">Leia, avalie e compartilhe! Para mais informações, nos conheça por <a class="quicksand-regular2" href="QuemSomos.html">aqui</a></h3>
+      <h3 class="quicksand-regular2">Leia, avalie e compartilhe! Para mais informações, nos conheça por <a id="aqui" class="quicksand-regular2" href="QuemSomos.html">aqui</a></h3>
 </body>
 </html>
