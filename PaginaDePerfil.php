@@ -10,8 +10,8 @@ include('protect.php')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles1.css">
-    <link rel='stylesheet' href="bootstrap copy.css">
+    <link rel='stylesheet' href="styles.css">
+    <link rel='stylesheet' href="bootstrap copy1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -70,48 +70,54 @@ include('protect.php')
             </div>
         <div class="container-fluid">
             <div class="HeaderUser">
-                <img id="ProfilePic"src="profile picture.jpg">
-                <div class="linhaV"></div>
+                <img class="img-fluid" id="ProfilePic"src="profile picture.jpg">
             </div><br>
             <ul>
               <h3 id="x17" class="quicksand-regular"><?php echo $_SESSION['nome']; ?></h3>
             <p id="x17" class="quicksand-regular2">@nomedeusuario</p>
           </ul><br><br>
-            <div class="livrosLidos">
-            <h4 id="x21" class="quicksand-regular">Livros lidos:</h4>
-            <h3 id="x21" class="quicksand-regular2">N</h3><br>
-            <h4 id="x21" class="quicksand-regular">Livros na lista:</h4>
-            <h3 id="x21" class="quicksand-regular2">n</h3>
-          </div>
-          
-            <h3 id="x17" class="quicksand-regular">Avaliações de <?php echo $_SESSION['nome']; ?>:</h3><br>
-            <div class="avaliacoes">
-            <div class="card" style="width: 20rem;">
-            <div class="card-body">
-            <h5 class="card-title">Livros:</h5><br>
-            <a class="col-sm-2" href="PáginasDeLeituraLivro.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a><br><br>
-            <a href="#" class="card-link">Nota</a>
-            </div>
-            </div>
-          </ul>
-          <ul>
-          <div class="livLista">
-            <h3 id="x17" class="quicksand-regular">Livros na lista de <?php echo $_SESSION['nome']; ?>:</h3><br>
-            <div class="card" style="width: 20rem;">
+          <div class="row">
+              <div class="col-lg">
+                    <h4 id="x21" class="quicksand-regular">Livros lidos:</h4>
+                    <h3 id="x21" class="quicksand-regular2">N</h3>
+                    <h4 id="x21" class="quicksand-regular">Livros na lista:</h4>
+                    <h3 id="x21" class="quicksand-regular2">n</h3>
+             </div><br>
+            
+              <div class="col-lg">
+                <h3 id="x17" class="quicksand-regular">Avaliações de <?php echo $_SESSION['nome']; ?>:</h3><br>
+              <a href="avaliacoes.php">
+                <div id="livAv" class="card" style="width: 20rem; height: 15rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Notas:</h5>
+                    <a class="col-sm-2" href="PáginasDeLeituraLivro.php"><img id="x6" src="HarryPotter1.jpg" alt="Livro1"></a><br><br>
+                    <p class="quicksand-regular2">Nome Livro</p>
+                  </div>
+              </a>
+                </div>
+              </div>
+         </div><br><br>
+         <div class="row">  
+              <div class="col-lg">
+              <h3 id="x17" class="quicksand-regular">Livros na lista de <?php echo $_SESSION['nome']; ?>:</h3><br>
+              <a href="ListasUser.php">
+                <div id="LivLista" class="card" style="width: 20rem; height: 15rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Livros:</h5>
+                    <a class="col-sm-2" href="PáginasDeLeituraLivro.php"><img id="x6" src="HarryPotter1.jpg" alt="Livro1"></a><br><br>
+                    <p class="quicksand-regular2">Nome Livro</p>
+                  </div>
+                </div>
+              </a>
+              </div>
+              <div class="col-lg">
+              <h3 id="x17"class="quicksand-regular">Continuar lendo:</h3><br>
+              <div id="contLendo" class="card" style="width: 20rem; height:15rem;">
               <div class="card-body">
                 <h5 class="card-title">Livros:</h5><br>
-                <a class="col-sm-2" href="PáginasDeLeituraLivro.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a><br><br>
-                <a href="#" class="card-link">Nome do livro</a>
-              </div>
-          </div>  
-          </ul>  
-         <ul>
-          <h3 id="x17"class="quicksand-regular">Continuar lendo:</h3><br>
-          <div class="card" style="width: 20rem;">
-          <div class="card-body">
-            <h5 class="card-title">Livros:</h5><br>
-            <a class="col-sm-2" href="PáginasDeLeituraLivro.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a><br><br>
-            <a href="PáginasDeLeituraLivro.html" class="card-link">Nome Livro</a>
+                <a class="col-sm-2" href="PáginasDeLeituraLivro.php"><img id="x6" src="HarryPotter1.jpg" alt="Livro1"></a><br><br>
+                <p class="quicksand-regular2">Nome Livro</p>
           </div>
-          </ul>
+          </div>
+                                    
            
