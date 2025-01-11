@@ -10,8 +10,8 @@ include('protect.php')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles1.css">
-    <link rel='stylesheet' href="bootstrap copy.css">
+    <link rel='stylesheet' href="styles.css">
+    <link rel='stylesheet' href="bootstrap copy1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -74,29 +74,59 @@ include('protect.php')
         <div class="container-fluid">
         <a href= "PáginasDeLeituraLivro.php"><img  id ="x14" src="HarryPotter1.jpg" alt="Livro1"></a> 
         </div><br>
+        
         <div class="container-fluid">
-          <h3 id="x17" class="quicksand-regular">
-            Descrição:
-          </h3>
-          <h5 id="x17" class="quicksand-regular2">
-            Descrição sobre o livro
-          </h5>
-          <h4 id="x19" class="quicksand-regular">
-            Avaliação Geral:
-          </h4>
-          <h5 id="x19" class="quicksand-regular2">
-            4.5/5
-          </h5>
-          <h6 id="x19" class="quicksand-regular2">
-            x pessoas avaliaram
-          </h6>
-          <h5 id="x17" class="quicksand-regular">
-            Gênero
-          </h5>
-          <h6 id="x17" class="quicksand-regular2">
+          <div class="row gx-3 mb-3">
+             <div class="col-md-6">
+                <h3 id="x17" class="quicksand-regular">
+                  Descrição:
+                </h3>
+                <h5 id="x17" class="quicksand-regular2">
+                Descrição sobre o livrodiidhifhwhwheduwhduoabndco<br>fniperfnpnp
+                </h5>
+             </div>
+            <div class="col-md-6">
+              <h4 id="x19" class="quicksand-regular">
+                Avaliação Geral:
+              </h4>
+              <h5 id="x19" class="quicksand-regular2">
+                4.5/5
+              </h5>
+              <h6 id="x19" class="quicksand-regular2">
+                x pessoas avaliaram
+              </h6>
+            </div>
+          </div>
+        <div class="row gx-3 mb-3">
+           <div class="col-md-3">
+            <h4 id="x17" class="quicksand-regular">
+              Gênero
+            </h4>
+            <h6 id="x17" class="quicksand-regular2">
             Gênero do livro
-          </h6>
+            </h6>
+          </div>
+          <div class="col-md-3">
+            <h4 id="x17" class="quicksand-regular">
+              Autor
+            </h4>
+            <h6 id="x17" class="quicksand-regular2">
+            Nome do autor
+            </h6>
+          </div>
+          <div class="col-md-3">
+            <h4 id="x17" class="quicksand-regular">
+              Ano de lançamento
+            </h4>
+            <h6 id="x17" class="quicksand-regular2">
+            xxxx
+            </h6>
+          </div>
+          
+        </div>
         </div><br><br>
+        <button href="ListasUser.php" class="btn btn-primary">Adicionar à sua lista</button><br><br>
+        <button href="#" class="btn btn-primary">Avaliar</button>
         <!--Parte de comentários-->
       <div class="container-fluid">
         <h3 x
