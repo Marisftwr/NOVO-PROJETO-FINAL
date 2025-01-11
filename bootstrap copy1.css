@@ -393,6 +393,7 @@ code {
 }
 a > code {
   color: inherit;
+  text-decoration: none;
 }
 
 kbd {
@@ -4044,6 +4045,7 @@ textarea.form-control-lg {
 .navbar-text a:hover,
 .navbar-text a:focus {
   color: var(--bs-navbar-active-color);
+  text-decoration: none;
 }
 
 .navbar-collapse {
