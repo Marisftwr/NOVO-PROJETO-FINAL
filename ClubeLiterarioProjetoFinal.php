@@ -45,7 +45,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         <title>Clube literário</title>
 
         <link rel='stylesheet' href="bootstrap-grid.css">
-        <link rel='stylesheet' href="styles.css">
+        <link rel='stylesheet' href="styles1.css">
         <link rel='stylesheet' href="bootstrap copy.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
