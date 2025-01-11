@@ -10,7 +10,7 @@ include('protect.php')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles.css">
+    <link rel='stylesheet' href="styles1.css">
     <link rel='stylesheet' href="bootstrap copy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,7 +72,7 @@ include('protect.php')
         <hr class="linhaHome">
         <br><br>
         <div class="container-fluid">
-        <a href= "PáginasDeLeituraLivro.php"><img  id ="x14" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a> 
+        <a href= "PáginasDeLeituraLivro.php"><img  id ="x14" src="HarryPotter1.jpg" alt="Livro1"></a> 
         </div><br>
         <div class="container-fluid">
           <h3 id="x17" class="quicksand-regular">
