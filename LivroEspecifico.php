@@ -8,10 +8,10 @@ include('protect.php')
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="icon" type="image/x-icon" href="IconSite.png">
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles.css">
-    <link rel='stylesheet' href="bootstrap copy1.css">
+    <link rel='stylesheet' href="styles1.css">
+    <link rel='stylesheet' href="bootstrap copy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -24,8 +24,8 @@ include('protect.php')
     <body class="bodyRoxo">
         <nav class="container-fluid">
           <ul class="row">
-            <a class="col-sm-3">
-              <img id="x1" src="LogoSite.png">
+            <a class="col-sm-4">
+              <img class="img-fluid" src="LogoSite3.png">
             </a>
             <li class="col-sm-2">
               <a class="nav-link" href="Home.php">Home</a>
@@ -54,7 +54,7 @@ include('protect.php')
             </div>
             <div id="mySidenav" class="sidenav">
               <a class="quicksand-regular2" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img id="fechar" src="fechar.png"></a><br><br>
-              <a href="PaginaDePerfil.php"><img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User Avatar"></a><br>
+              <a href="PaginaDePerfil.php"><img id="ProfilePicNav" src="profile picture.jpg" class="rounded-circle me-3" alt="User Avatar"></a><br>
               <p class="quicksand-regular2"><?php echo $_SESSION['nome']; ?></p><br>
               <form class="form-inline">
               <input class="form-control col-sm-10" type="search" placeholder="Search" aria-label="Search">
@@ -126,35 +126,115 @@ include('protect.php')
         </div>
         </div><br><br>
         <button href="ListasUser.php" class="btn btn-primary">Adicionar à sua lista</button><br><br>
-        <button href="#" class="btn btn-primary">Avaliar</button>
+        <button href="#" class="btn btn-primary">Avaliar</button><br><br>
+        <div id="divLiv" class="container-fluid">
+            <h1 class="quicksand-regular">
+              Comentários
+            </h1>
+          </div><br>
+        <div class="container">
+    <div class="comment-section">
+        <div class="mb-4">
+            <div class="d-flex gap-3">
+                <img src="profile picture.jpg" alt="User Avatar" class="user-avatar">
+                <div class="flex-grow-1">
+                    <textarea class="form-control comment-input" cols="60" rows="2" placeholder="Escreva um comentário"></textarea>
+                    <div class="mt-3 text-end">
+                        <button class="btn-comment">Comentar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comments List -->
+        <div class="comments-list">
+            <!-- Comment 1 -->
+            <div class="comment-box">
+                <div class="d-flex gap-3">
+                <a href="PaginaDePerfil.php"><img src="profile picture.jpg" alt="User Avatar" class="user-avatar"></a>
+                    <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h6 id="NomeComment" class="quicksand-regular2">Anna Beatriz</h6>
+                            <span class="comment-time">2 hours ago</span>
+                        </div>
+                        <p class="mb-2">Que livro PÉSSIMO.</p>
+                        <div class="comment-actions">
+                            <a href="#"><i class="bi bi-heart"></i> <img id="IconComment" src="Icon curtida.png"></a>
+                            <a href="#"><i class="bi bi-reply"></i><img id="IconComment" src="Reply.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reply Section -->
+                <div class="reply-section mt-3">
+                    <div class="comment-box">
+                        <div class="d-flex gap-3">
+                        <a href="PaginaDePerfil.php"><img src="profile picture.jpg" alt="User Avatar" class="user-avatar"></a>
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h6 id="NomeComment" class="quicksand-regular2">Maria Rita</h6>
+                                    <span class="comment-time">1 hora atrás</span>
+                                </div>
+                                <p class="mb-2">Discordo, gostei muito do livro.
+                                </p>
+                                <div class="comment-actions">
+                                    <a href="#"><i class="bi bi-heart"></i> <img id="IconComment" src="Icon curtida.png"></a>
+                                    <a href="#"><i class="bi bi-reply"></i><img id="IconComment" src="Reply.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comment 2 -->
+            <div class="comment-box">
+                <div class="d-flex gap-3">
+                    <a href="PaginaDePerfil.php"><img src="profile picture.jpg" alt="User Avatar" class="user-avatar"></a>
+                    <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h6 id="NomeComment" class="mb-0">Mariana Lima</h6>
+                            <span class="comment-time">3 horas atrás</span>
+                        </div>
+                        <p class="mb-2">Que livro importante!</p>
+                        <div class="comment-actions">
+                            <a href="#"><i class="bi bi-heart"></i> <img id="IconComment" src="Icon curtida.png"></a>
+                            <a href="#"><i class="bi bi-reply"></i><img id="IconComment" src="Reply.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
         <!--Parte de comentários-->
-      <div class="container-fluid">
+      <!---<div class="container-fluid">
         <h3 x
         id="x17" class="quicksand-regular">
           Comentários sobre o livro:
         </h3><br>
-  <div class="divComment"><br>
-        <div class="card sm-1">
-          <div class="card-body">
-              <form>
-              <div class="sm-4">
-                <label for="commentContent" class="form-label">
-                  <a href="PaginaDePerfil">
-                  <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User Avatar">
-                  </a>
-                </label>
-                <div class="container-fluid">
-                <textarea class="form-control" id="commentContent" rows="2" COLS="200" placeholder="Comente aqui"></textarea>
-              </div>
-              </div>
-              <button type="submit" class="btn btn-outline-secondary">Post Comment</button>
-            </form>
-          </div>
+              <div class="divComment"><br>
+                <div class="card sm-1">
+                  <div class="card-body">
+                      <form>
+                      <div class="sm-4">
+                        <label for="commentContent" class="form-label">
+                          <a href="PaginaDePerfil">
+                          <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User Avatar">
+                          </a>
+                        </label>
+                        <div class="container-fluid">
+                        <textarea class="form-control" id="commentContent" rows="2" COLS="200" placeholder="Comente aqui"></textarea>
+                      </div>
+                      </div>
+                      <button type="submit" class="btn btn-outline-secondary">Post Comment</button>
+                    </form>
+                  </div>
         
         </div><br><br>
-        <!--Outro comentários além do usuário-->
+        Outro comentários além do usuário
         <div class="comments-list">
-          <!-- Comment 1 -->
+           Comment 1 
           <div class="card mb-3">
             <div id="x18" class="card-body">
               <div class="d-flex mb-3">
@@ -192,7 +272,8 @@ include('protect.php')
                   <button class="btn btn-sm btn-outline-secondary">
                     <i class="bi bi-reply"></i> Responder
                   </button>
-                </div>
+                </div>-->
+              
   </div>
     </div>
 </body>
