@@ -6,9 +6,10 @@ include('protect.php')
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="IconSite.png">
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles.css">
-    <link rel='stylesheet' href="bootstrap copy1.css">
+    <link rel='stylesheet' href="styles1.css">
+    <link rel='stylesheet' href="bootstrap copy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -22,8 +23,8 @@ include('protect.php')
         <body class="bodyRoxo">
             <nav class="container-fluid">
               <ul class="row">
-                <a class="col-sm-2">
-                  <img id="x1" src="LogoSite.png">
+                <a class="col-sm-4">
+                  <img class="img-fluid" src="LogoSite3.png">
                 </a>
                 <li class="col-sm-2">
                   <a class="nav-link" href="Home.php">Home</a>
@@ -51,7 +52,7 @@ include('protect.php')
                   </div>
                   <div id="mySidenav" class="sidenav">
                     <a class="quicksand-regular2" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img id="fechar" src="fechar.png"></a><br><br>
-                    <a href="PaginaDePerfil.html"><img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User Avatar"></a><br>
+                    <a href="PaginaDePerfil.php"><img id="ProfilePicNav" src="profile picture.jpg" class="rounded-circle me-3" alt="User Avatar"></a><br>
                     <p class="quicksand-regular2"><?php echo $_SESSION['nome']; ?></p><br>
                     <form class="form-inline">
                     <input class="form-control col-sm-10" type="search" placeholder="Search" aria-label="Search">
@@ -67,15 +68,17 @@ include('protect.php')
             </nav>
             <hr class="linhaHome"><br><br><br>
             <div class="container-fluid">
-                <iframe src="j-k-rowling-1-harry-potter-e-a-pedra-filosofal.pdf" id="pdf" ></iframe><br><br><br>
+                <div class="container-fluid">
+                    <iframe src="j-k-rowling-1-harry-potter-e-a-pedra-filosofal.pdf" id="pdf" ></iframe><br><br><br>
+                </div>
                 <h3 id="x17" class="quicksand-regular"> - Anotações:</h3><br>
                 <div class="card sm-1">
                     <div class="card-body">
                         <form>
                         <div class="sm-4">
                           <label for="commentContent" class="form-label">
-                            <a href="PaginaDePerfil">
-                            <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User Avatar">
+                            <a href="PaginaDePerfil.php">
+                            <img id="ProfilePic" src="profile picture.jpg" class="rounded-circle me-3" alt="User Avatar">
                             </a>
                           </label>
                           <div class="container-fluid">
