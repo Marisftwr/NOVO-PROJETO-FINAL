@@ -9,9 +9,10 @@ include('protect.php')
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clube literário - Home</title>
+    <link rel="icon" type="image/x-icon" href="IconSite.png">
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles.css">
-    <link rel='stylesheet' href="bootstrap copy1.css">
+    <link rel='stylesheet' href="styles1.css">
+    <link rel='stylesheet' href="bootstrap copy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -21,8 +22,8 @@ include('protect.php')
 <body class="bodyRoxo">
       <nav class="container-fluid">
         <ul class="row">
-          <a class="col-sm-3">
-            <img id="x1" class="img-fluid" src="LogoSite.png">
+          <a class="col-sm-4">
+            <img class="img-fluid" src="LogoSite3.png">
           </a>
           <li class="col-sm-2">
             <a class="nav-link" href="Home.html">Home</a>
@@ -92,7 +93,7 @@ include('protect.php')
         <!--Nav lateral (coloquei aqui pois o carrossel estava atrapalhando)-->
             <div id="mySidenav" class="sidenav">
               <a class="quicksand-regular2" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img id="fechar" src="fechar.png"></a><br><br>
-              <a href="PaginaDePerfil.php"><img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User Avatar"></a><br>
+              <a href="PaginaDePerfil.php"><img id="ProfilePicNav" src="profile picture.jpg" class="rounded-circle me-3" alt="User Avatar"></a><br>
               <p class="quicksand-regular2"><?php echo $_SESSION['nome']; ?></p><br>
               <form class="form-inline">
               <input class="form-control col-sm-10" type="search" placeholder="Search" aria-label="Search">
