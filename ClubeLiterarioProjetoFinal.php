@@ -50,10 +50,10 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 <html>
     <head>
         <title>Clube literário</title>
-
+        <link rel="icon" type="image/x-icon" href="IconSite.png">
         <link rel='stylesheet' href="bootstrap-grid.css">
-        <link rel='stylesheet' href="styles.css">
-        <link rel='stylesheet' href="bootstrap copy1.css">
+        <link rel='stylesheet' href="styles1.css">
+        <link rel='stylesheet' href="bootstrap copy.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -65,14 +65,14 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 <!--Header-->
     <nav class="container-fluid">
                 <ul class="row">
-                  <a class="col-sm-2" href="ClubeLiterarioProjetoFinal.php" >
-                    <img id="x1" src="LogoSite.png">
+                  <a class="col-sm-4" href="ClubeLiterarioProjetoFinal.php" >
+                    <img class="img-fluid" src="LogoSite3.png">
                   </a>
                   <li class="col-sm-2">
                     <a class="nav-link" href="QuemSomos.html">Quem somos?</a>
                   </li>
                     <li class="col-sm-2">
-                      <a class="nav-link" href="InscrevaSe.html">Inscreva-se</a>
+                      <a class="nav-link" href="InscrevaSe.php">Inscreva-se</a>
                     </li>
                     <li class="col-sm-2">
                       <button onclick="Entrar()" class="btn">Entre</button> 
@@ -83,17 +83,17 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
     <hr class="container-fluid"><br>
   <!--Div a ser mostrada quando apertar o link de entrar-->
     <div class="container-fluid" id="x7"><br><br>
-      <h1 class="quicksand-regular" id="Entrar">Entrar</h1>
-    <form method="post" action="" class="quicksand-regular2">
-        <label>E-mail:</label>
-        <input class="form-control" type="text" name="email" placeholder="Nome">
-        <br><br>
-        <label>Senha:</label>
-        <input class="form-control" type="password" name="senha" placeholder="senha123">
-        <br><br>
-        <button type="submit" value="Submit" class="btn btn-primary">Entrar</button><br><br>
-        <button type="submit" value="Submit" class="btn btn-primary">Entrar com X<img id="x3" src="x-social-media-round-icon.png"></button><br><br>
-        <button type="submit" value="Submit" class="btn btn-primary">Entrar com Google<img id="x4" src="google.png"></button>
+        <h1 class="quicksand-regular" id="Entrar">Entrar</h1>
+      <form method="post" action="" class="quicksand-regular2">
+          <label>E-mail:</label>
+          <input class="form-control" type="text" name="email" placeholder="Nome">
+          <br><br>
+          <label>Senha:</label>
+          <input class="form-control" type="password" name="senha" placeholder="senha123">
+          <br><br>
+          <button type="submit" value="Submit" class="btn btn-primary">Entrar</button><br><br>
+          <button type="submit" value="Submit" class="btn btn-primary">Entrar com X<img id="x3" src="x-social-media-round-icon.png"></button><br><br>
+          <button type="submit" value="Submit" class="btn btn-primary">Entrar com Google<img id="x4" src="google.png"></button>
     </div>
   <!--Fim-->
     <h1 class="quicksand-regular">
