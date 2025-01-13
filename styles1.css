@@ -129,7 +129,7 @@ text-align:center ;}
 }
 
 /*Página home*/
-.linhaHome {width: 40%;}
+.linhahrome {width: 40%;}
 
      /*Parte do catálogo de livros da página home*/
      #divLiv {
@@ -158,7 +158,7 @@ text-align:center ;}
      #fotoLivro {
           border-radius: 20px
      }
-     #cardLivro:hover {  }
+     #cardLivro:hover { border: 2px solid rgba(221, 185, 23, 0.801); }
 
 /*Nav lateral a partir do click no menu*/
 #mySidenav {background-color: #d4a64f;
@@ -190,6 +190,11 @@ text-align:center ;}
      width: 30px
 }
 
+#ProfilePicNav {
+     width:60px;
+     height:60px
+}
+
 /*Configuração carrossel imagem*/
 .bodyRoxo{ background-color: #472252;}
 
@@ -201,7 +206,7 @@ text-align:center ;}
      
 #x14:hover { border: 2px solid rgba(221, 185, 23, 0.801);  }
 
-     /*Parte de comentários do livro em específico*/
+     /*Parte de comentários do livro em específico
 .nome {font-size: 22px;
        font-family: 'quicksand', sans-serif;
        font-style: bold;
@@ -255,7 +260,107 @@ textarea {border-radius: 10px;}
 #x18 {
      background-color: #9568a0;
 
-}
+}*/
+.comment-section {
+     max-width: 800px;
+     margin: 2rem auto;
+     padding: 20px;
+     background: #f5c543;
+     border-radius: 15px;
+     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .comment-box {
+     background: rgb(252, 227, 116);
+     border-radius: 10px;
+     padding: 20px;
+     margin-bottom: 20px;
+     transition: transform 0.2s;
+     border: 1px solid #e7b74f;
+ }
+ 
+ .comment-box:hover {
+     transform: translateY(-2px);
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .user-avatar {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     object-fit: cover;
+ }
+ 
+ .comment-input {
+     border-radius: 20px;
+     padding: 15px 20px;
+     border: 2px solid #e9ecef;
+     transition: all 0.3s;
+ }
+ 
+ .comment-input:focus {
+     box-shadow: none;
+     border-color: #86b7fe;
+ }
+ 
+ .btn-comment {
+     border-radius: 20px;
+     padding: 8px 25px;
+     color:#430b46;
+     background: #b378be;
+     border: none;
+     transition: all 0.3s;
+ }
+ 
+ .btn-comment:hover {
+     background: #6b107e;
+     color:#e9ecef;
+     transform: translateY(-1px);
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+ }
+ 
+ .comment-actions {
+     font-size: 0.9rem;
+ }
+ 
+ .comment-actions a {
+     color: #6c757d;
+     text-decoration: none;
+     margin-right: 15px;
+     transition: color 0.2s;
+ }
+ 
+ .comment-actions a:hover {
+     color: #0d6efd;
+ }
+ 
+ .comment-time {
+     color: #adb5bd;
+     font-size: 0.85rem;
+ }
+ 
+ .reply-section {
+     margin-left: 60px;
+     border-left: 2px solid #e9ecef;
+     padding-left: 20px;
+ }
+
+ #NomeComment {
+     font-family: "Quicksand", sans-serif;
+     font-weight: 300;
+     font-style: normal;
+     color:rgb(91, 6, 102);
+     margin: auto;
+     text-align: justify
+
+ }
+
+ #IconComment {
+     height: 30px;
+     width: 30px
+ }
+
 /*Descrição do livro e avaliações*/
 #x17 {
      text-align:justify
