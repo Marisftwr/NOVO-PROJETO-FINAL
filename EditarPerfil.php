@@ -8,10 +8,10 @@ include('protect.php')
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="icon" type="image/x-icon" href="IconSite.png">
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles.css">
-    <link rel='stylesheet' href="bootstrap copy1.css">
+    <link rel='stylesheet' href="styles1.css">
+    <link rel='stylesheet' href="bootstrap copy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@ include('protect.php')
     <nav class="container-fluid">
         <ul class="row">
           <a class="col-sm-3">
-            <img id="x1" src="LogoSite.png">
+            <img class="img-fluid" src="LogoSite3.png">
           </a>
           <li class="col-sm-2">
             <a class="nav-link" href="Home.php">Home</a>
