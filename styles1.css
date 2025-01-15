@@ -13,6 +13,9 @@
 
 a {font-family: 'Noto Serif Ahom',serif;
    text-decoration: none}
+
+#aqui{color:#e7b74f}
+
 #aqui:hover {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 .bodyHome {background-image: url(Background.png);
@@ -20,6 +23,9 @@ a {font-family: 'Noto Serif Ahom',serif;
       background-size: 2000px 1000px;
 
       
+}
+.bodyHome {
+     background-color: #5a4d74
 }
 .cardtext-bg-primarymb-3 {
   width: 18rem;
@@ -163,7 +169,7 @@ text-align:center ;}
 /*Nav lateral a partir do click no menu*/
 #mySidenav {background-color: #d4a64f;
      height: 100%;
-     width: 0;
+     width: 0px;
      position: fixed;
      z-index: 1;
      top: 0;
@@ -421,10 +427,11 @@ textarea {border-radius: 10px;}
      margin-right:40%
  }
  
+ /*Página de leitura do livro*/
 /*Página de Perfil*/
 #mySidenav2 {background-color: #341035;
      height: 100%;
-     width: 0;
+     width: 0px;
      position: fixed;
      z-index: 1;
      top: 0;
@@ -459,12 +466,17 @@ textarea {border-radius: 10px;}
      border-radius: 50%;
      border: #100613;
      border-width: 2px;
-     width: 50%;
-     height: 50%;
+     width: 30%;
+     height: 30%;
      margin-top: 10px;
      margin-bottom: 5px;
      margin-left: 20px
 }
+
+#cardHeaderProfile {
+     border-radius: 10px;
+}
+#Titulos:hover{text-decoration: underline;}
 
 #headerUserUp{
      height: 100%;
@@ -518,6 +530,25 @@ textarea {border-radius: 10px;}
 
 /*Pagina editar perfil*/
 #cardEdPerfil {
-     background-color: #4b1b4d;
+     background-color: #4c1757;
      padding-bottom: 100px;
+}
+/*Footer*/
+footer {
+     background-color: #1f0d24;
+     border: 10px solid #59465f;
+}
+
+#iconRedes{
+     height:25px;
+     width: 25px
+}
+
+/*Página de avaliações*/
+.bodyAv{
+     background-color:#4c1757
+}
+
+#DivAv {
+     border: 1px solid #59465f;
 }
