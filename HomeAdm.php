@@ -11,12 +11,12 @@ include('protect.php')
     <title>Clube literário - Home</title>
     <link rel="icon" type="image/x-icon" href="IconSite.png">
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles.css">
-    <link rel='stylesheet' href="bootstrap copy.css">
+    <link rel='stylesheet' href="styles1.css">
+    <link rel='stylesheet' href="bootstrap copy1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="ClubeLiterarioProjetoFinal2.js"></script>
+    <script type="text/javascript" src="ClubeLiterarioProjetoFinal.js"></script>
     <script type="text/javascript" src="bootstrap.bundle.min.js" ></script>
 </head>
 <body class="bodyRoxo">
@@ -100,8 +100,8 @@ include('protect.php')
               <button class="btn btn-outline-success" type="submit"><img id="BotaoPesquisa" src="SearchIcon1.png"></button>
               </form>
               <a class="quicksand-regular2" href="QuemSomos.html">Quem Somos?</a><br><br>
-              <a class="quicksand-regular2" href="paraLer.php">Minha lista</a><br><br>
-              <a class="quicksand-regular2" href="avaliacoes.php">Avaliações</a><br><br>
+              <a class="quicksand-regular2" href="#">Minhas listas</a><br><br>
+              <a class="quicksand-regular2" href="#">Avaliações</a><br><br>
               <a class="quicksand-regular2" href="configuracoes.php">Configurações</a><img id="config" src="configurações.png"><br><br>
               <a class="quicksand-regular2" href="FerramentasAdm.php">Ferramentas do Administrador</a><br><br>
               <a href="logout.php" class="quicksand-regular2">Sair</a><br><br>
@@ -118,7 +118,7 @@ include('protect.php')
           <h3 id="x17" class="quicksand-regular">
             Filtros:
           </h3>
-          <li class="col-sm-2">
+          <li class="col-sm-1">
               <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Gêneros
               </a>
@@ -134,7 +134,7 @@ include('protect.php')
 
               </ul>
             </li>
-            <li class="col-sm-2">
+            <li class="col-sm-1">
               <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Maior livro
               </a>
@@ -142,14 +142,14 @@ include('protect.php')
               <li><a class="dropdown-item">Menor livro</a></li>
              </ul>
             </li>
-            <li class="col-sm-2">
+            <li class="col-sm-1">
               <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Mais lidos
               </a>
               <ul class="dropdown-menu">
               <li><a class="dropdown-item">Menos lidos</a></li>
              </ul>
-             <li class="col-sm-2">
+             <li class="col-sm-1">
               <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Nacional
               </a>
@@ -157,12 +157,12 @@ include('protect.php')
               <li><a class="dropdown-item">Internacional</a></li>
              </ul>
              </li>
-             <li class="col-sm-2">
+             <li class="col-sm-1">
               <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Autor:
+              Autor
               </a>
              </li>
-             <li class="col-sm-2">
+             <li class="col-sm-1">
               <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Ano
               </a>
@@ -179,15 +179,34 @@ include('protect.php')
 
             <br><br>
             <div class="row">
+            <?php
+            include('conexao.php');
+
+            $comando = "SELECT * FROM livro ORDER BY id";
+            $enviar = mysqli_query($conexao, $comando);
+            $resultado = mysqli_fetch_all($enviar, MYSQLI_ASSOC);
+            
+            foreach ($resultado as $livroespecifico) {
+              $id = $livroespecifico['id'];
+              $nome = $livroespecifico['nome'];
+              $genero = $livroespecifico['genero'];
+              $auto = $livroespecifico['autor'];
+              $ano = $livroespecifico['ano'];
+              $numPag = $livroespecifico['numPaginas'];
+              $isbn = $livroespecifico['ISBN'];
+              $pathcapa = $livroespecifico['capa_path'];
+              $pathlivro = $livroespecifico['livro_path'];
+              ?>
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
-                    <img id="fotoLivro" class="card-img-top" src="HarryPotter1.jpg" alt="Card image cap">
+                    <img id="fotoLivro" class="card-img-top" src="<?php echo $pathcapa;?>" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
-                    <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+                    <h5 class="card-title" id="nomeLivro"><?php echo $nome;?></h5>
+                    <a href="LivroEspecifico.php?id=<?php echo $id; ?>" class="btn btn-primary">Veja mais</a>
                   </div>
                 </div>
               </div>
+              <!--
               <div class="col-lg">
                 <div id="cardLivro" class="card" style="width: 15rem;">
                     <img id="fotoLivro" class="card-img-top" src="https://m.media-amazon.com/images/I/61DouJElapL._SL1335_.jpg" alt="Card image cap">
@@ -673,8 +692,11 @@ include('protect.php')
               </div>
             </div>                                                                
           <br><br>
-        </div>
-        <footer class="container-fluid"><br>
+        </div>-->
+<?php
+}
+?>
+<footer class="container-fluid"><br>
         <h3 class="quicksand-regular">
           Informações gerais:
         </h3><br>
