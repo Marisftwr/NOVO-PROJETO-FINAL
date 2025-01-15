@@ -10,12 +10,12 @@ include('protect.php')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="IconSite.png">
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles1.css">
+    <link rel='stylesheet' href="styles.css">
     <link rel='stylesheet' href="bootstrap copy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="ClubeLiterarioProjetoFinal.js"></script>
+    <script type="text/javascript" src="ClubeLiterarioProjetoFinal2.js"></script>
     <script type="text/javascript" src="bootstrap.bundle.min.js" ></script>
     
     <title>Perfil</title>
@@ -62,8 +62,8 @@ include('protect.php')
               <button class="btn btn-outline-success" type="submit"><img id="BotaoPesquisa" src="SearchIcon1.png"></button>
               </form>
                 <a class="quicksand-regular2" href="QuemSomos.html">Quem Somos?</a><br><br>
-                <a class="quicksand-regular2" href="#">Minhas Listas</a><br><br>
-                <a class="quicksand-regular2" href="#">Avaliações</a><br><br>
+                <a class="quicksand-regular2" href="paraLer.php">Minha Lista</a><br><br>
+                <a class="quicksand-regular2" href="avaliacoes.php">Avaliações</a><br><br>
                 <a class="quicksand-regular2" href="EditarPerfil.php">Editar Perfil</a><br><br>
                 <a class="quicksand-regular2" href="#">Configurações</a><img id="config" src="configurações.png"><br><br>
                 <a class="quicksand-regular2" href="#">Sair</a><br><br>
@@ -89,7 +89,7 @@ include('protect.php')
               <a href="avaliacoes.php">
                 <div id="livAv" class="card" style="width: 20rem; height: 15rem;">
                   <div class="card-body">
-                    <h5 class="card-title">Notas:</h5>
+                    <h5 class="card-title" id="Titulos" >Notas:</h5>
                     <a class="col-sm-2" href="PáginasDeLeituraLivro.php"><img id="x6" src="HarryPotter1.jpg" alt="Livro1"></a><br><br>
                     <p class="quicksand-regular2">Nome Livro</p>
                   </div>
@@ -100,10 +100,10 @@ include('protect.php')
          <div class="row">  
               <div class="col-lg">
               <h3 id="x17" class="quicksand-regular">Livros na lista de <?php echo $_SESSION['nome']; ?>:</h3><br>
-              <a href="ListasUser.php">
+              <a href="paraLer.php">
                 <div id="LivLista" class="card" style="width: 20rem; height: 15rem;">
                   <div class="card-body">
-                    <h5 class="card-title">Livros:</h5>
+                    <h5 class="card-title" id="Titulos">Livros:</h5>
                     <a class="col-sm-2" href="PáginasDeLeituraLivro.php"><img id="x6" src="HarryPotter1.jpg" alt="Livro1"></a><br><br>
                     <p class="quicksand-regular2">Nome Livro</p>
                   </div>
@@ -113,11 +113,42 @@ include('protect.php')
               <div class="col-lg">
               <h3 id="x17"class="quicksand-regular">Continuar lendo:</h3><br>
               <div id="contLendo" class="card" style="width: 20rem; height:15rem;">
-              <div class="card-body">
-                <h5 class="card-title">Livros:</h5><br>
-                <a class="col-sm-2" href="PáginasDeLeituraLivro.php"><img id="x6" src="HarryPotter1.jpg" alt="Livro1"></a><br><br>
-                <p class="quicksand-regular2">Nome Livro</p>
-          </div>
-          </div>
-                                    
-           
+                <div class="card-body">
+                  <h5 class="card-title">Livros:</h5><br>
+                  <a class="col-sm-2" href="PáginasDeLeituraLivro.php"><img id="x6" src="HarryPotter1.jpg" alt="Livro1"></a><br><br>
+                  <p class="quicksand-regular2">Nome Livro</p>
+                </div>
+              </div>
+        </div>
+</div>
+    <br><br>
+<footer class="container-fluid"><br>
+        <h3 class="quicksand-regular">
+          Informações gerais:
+        </h3><br>
+        <h5 class="quicksand-regular">
+          Contato:
+        </h5>
+        <p  class="quicksand-regular2">
+          <img id="iconRedes" src="whatsapp.png">  (21)91989-1304
+        </p><br>
+        <p  class="quicksand-regular2">
+          <img id="iconRedes" src="google.png">  clubeliterario@gmail.com
+        </p><BR>
+        <h5   class="quicksand-regular">
+          Redes sociais:
+        </h5>
+        <p class="quicksand-regular2">
+          <img id="iconRedes" src="x-social-media-round-icon.png">  @Clube_literario
+        </p><br>
+        <p  class="quicksand-regular2">
+          <img id="iconRedes" src="Instagram.png">  @Clubeliterarioficial
+        </p><br>
+        <h5 class="quicksand-regular">
+          Endereço: 
+        </h5>
+        <p class="quicksand-regular2">Bairro, rua e número.</p><br>
+      </footer>
+  
+</body>
+  </html>
