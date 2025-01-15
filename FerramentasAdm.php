@@ -10,19 +10,19 @@ include('protect.php')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clube literário - Home</title>
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles.css">
-    <link rel='stylesheet' href="bootstrap copy.css">
+    <link rel='stylesheet' href="styles1.css">
+    <link rel='stylesheet' href="bootstrap copy1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="ClubeLiterarioProjetoFinal2.js"></script>
+    <script type="text/javascript" src="ClubeLiterarioProjetoFinal.js"></script>
     <script type="text/javascript" src="bootstrap.bundle.min.js" ></script>
 </head>
 <body class="bodyRoxo">
       <nav class="container-fluid">
         <ul class="row">
-          <a class="col-sm-4">
-            <img class="img-fluid" src="LogoSite3.png">
+          <a class="col-sm-3">
+            <img id="x1" class="img-fluid" src="LogoSite3.png">
           </a>
           <li class="col-sm-2">
             <a class="nav-link" href="Home.php">Home</a>
@@ -84,8 +84,8 @@ include('protect.php')
       </div>
       <!-- Formukário para o Administrador adicionar livros ao sistema-->
       <div class="container-fluid" id="cadLivro"><br><br>
-        <h1 class="quicksand-regular" id="Entrar">Entrar</h1>
-        <form method="post" action="" class="quicksand-regular2">
+        <h1 class="quicksand-regular" id="CadastroLivros">Cadastrar Livro</h1>
+        <form method="post" action="cadastroLivros.php" class="quicksand-regular2" enctype="multipart/form-data">
             <label>Nome do Livro</label>
             <input class="form-control" type="text" name="nomelivro" placeholder="Nome">
             <br><br>
@@ -104,8 +104,8 @@ include('protect.php')
             <label>ISBN</label>
             <input class="form-control" type="text" name="isbn" placeholder="ISBN">
             <br><br>
-            <label>Capa do Livro</label>
-            <input class="form-control" type="text" name="capa" placeholder="Romance, Aventura, Suspense...">
+            <label>Capa do Livro (insira um link do google com a imagem da capa)</label>
+            <input class="form-control" type="text" name="capa">
             <br><br>
             <label>Arquivo PDF do livro</label>
             <input class="form-control" type="file" name="arquivo">
@@ -113,39 +113,40 @@ include('protect.php')
             <button type="submit" value="Submit" class="btn btn-primary">Cadastrar o Livro</button><br><br>
         </form>
     </div>
-    <!--PHP de cadastro de livros-->
-    <?php
-    session_start();
-    include("conexao.php");
 
-    $nome = mysqli_real_escape_string($conexao, trim($_POST['nomelivro']));
-    $genero = mysqli_real_escape_string($conexao, trim($_POST['genero']));
-    $autor = mysqli_real_escape_string($conexao, trim($_POST['autor']));
-    $ano = mysqli_real_escape_string($conexao, trim($_POST['ano']));
-    $numPag = mysqli_real_escape_string($conexao, trim($_POST['numPag']));;
-    $isbn = mysqli_real_escape_string($conexao, trim($_POST['isbn']));;
-    $capa = mysqli_real_escape_string($conexao, trim($_POST['capa']));;
-    $arquivo = mysqli_real_escape_string($conexao, trim($_POST['arquivo']));;
-
-    $sql = "select count(*) as total from usuarios where nomedeusuario = '$usuario' ";
-    $result = mysqli_query($conexao, $sql);
-    $row = mysqli_fetch_assoc($result);
-
-    if($row['total'] == 1){
-        $_SESSION['usuario_existe'] = TRUE;
-        header('Location: InscrevaSe.php');
-        exit;
-    }
-
-    $sql = "INSERT INTO usuarios (nomedeusuario, nome, dataNasc, email, senha, data_cadastro) VALUES ('$usuario', '$nome', '$datanasc', '$email', '$senha', NOW())";
-
-    if($conexao->query($sql) === TRUE){
-        $_SESSION['status_cadastro'] = TRUE;
-    }
-
-    $conexao->close;
-    header('Location: FerramentasAdm.php');
-    exit;
-    ?>
+    <!-- Formukário para o Administrador alterar livros ao sistema-->
+    <div class="container-fluid" id="updateLivro"><br><br>
+        <h1 class="quicksand-regular" id="AlterarLivro">Alterar Livro</h1>
+        <form method="post" action="alterarLivros.php" class="quicksand-regular2" enctype="multipart/form-data">
+            <label>Entre com o nome do livro no qual deseja realizar alterações</label>
+            <input class="form-control" type="text" name="nomeLivro" placeholder="Nome do livro que deseja atualizar">
+            <br><br><br><br>
+            <label>Nome do Livro</label>
+            <input class="form-control" type="text" name="novonomeLivro" placeholder="Nome">
+            <br><br>
+            <label>Gênero</label>
+            <input class="form-control" type="text" name="genero" placeholder="Romance, Aventura, Suspense...">
+            <br><br>
+            <label>Autor</label>
+            <input class="form-control" type="text" name="autor" placeholder="Autor">
+            <br><br>
+            <label>Ano de Lançamento</label>
+            <input class="form-control" type="number" name="ano" placeholder="Ano">
+            <br><br>
+            <label>Número de Páginas</label>
+            <input class="form-control" type="number" name="numPag" placeholder="Numero de Paginas">
+            <br><br>
+            <label>ISBN</label>
+            <input class="form-control" type="text" name="isbn" placeholder="ISBN">
+            <br><br>
+            <label>Capa do Livro (insira um link do google com a imagem da capa)</label>
+            <input class="form-control" type="text" name="capa">
+            <br><br>
+            <label>Arquivo PDF do livro</label>
+            <input class="form-control" type="file" name="arquivo">
+            <br><br>
+            <button type="submit" value="Submit" class="btn btn-primary">Alterar o Livro</button><br><br>
+        </form>
+    </div>
 </body>
-          
+</html>
