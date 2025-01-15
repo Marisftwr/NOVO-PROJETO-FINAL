@@ -52,12 +52,12 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         <title>Clube literário</title>
         <link rel="icon" type="image/x-icon" href="IconSite.png">
         <link rel='stylesheet' href="bootstrap-grid.css">
-        <link rel='stylesheet' href="styles1.css">
+        <link rel='stylesheet' href="styles.css">
         <link rel='stylesheet' href="bootstrap copy.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="ClubeLiterarioProjetoFinal.js"></script>
+        <script type="text/javascript" src="ClubeLiterarioProjetoFinal2.js"></script>
         <script type="text/javascript" src="bootstrap.bundle.min.js" ></script>
         
     </head>
@@ -134,6 +134,33 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
           </button>
         </div>
       </div><br><br>
-      <h3 class="quicksand-regular2">Leia, avalie e compartilhe! Para mais informações, nos conheça por <a id="aqui" class="quicksand-regular2" href="QuemSomos.html">aqui</a></h3>
+      <h3 class="quicksand-regular2">Leia, avalie e compartilhe! Para mais informações, nos conheça por <a id="aqui" class="quicksand-regular2" href="QuemSomos.html">aqui</a></h3><br>
+      <footer class="container-fluid"><br>
+        <h3 class="quicksand-regular">
+          Informações gerais:
+        </h3><br>
+        <h5 class="quicksand-regular">
+          Contato:
+        </h5>
+        <p  class="quicksand-regular2">
+          <img id="iconRedes" src="whatsapp.png">  (21)91989-1304
+        </p><br>
+        <p  class="quicksand-regular2">
+          <img id="iconRedes" src="google.png">  clubeliterario@gmail.com
+        </p><BR>
+        <h5   class="quicksand-regular">
+          Redes sociais:
+        </h5>
+        <p class="quicksand-regular2">
+          <img id="iconRedes" src="x-social-media-round-icon.png">  @Clube_literario
+        </p><br>
+        <p  class="quicksand-regular2">
+          <img id="iconRedes" src="Instagram.png">  @Clubeliterarioficial
+        </p><br>
+        <h5 class="quicksand-regular">
+          Endereço: 
+        </h5>
+        <p class="quicksand-regular2">Bairro, rua e número.</p><br>
+      </footer>
 </body>
 </html>
