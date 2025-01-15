@@ -114,6 +114,33 @@ include('protect.php')
         </div>
     </div>
 </div>
+<footer class="container-fluid"><br>
+        <h3 class="quicksand-regular">
+          Informações gerais:
+        </h3><br>
+        <h5 class="quicksand-regular">
+          Contato:
+        </h5>
+        <p  class="quicksand-regular2">
+          <img id="iconRedes" src="whatsapp.png">  (21)91989-1304
+        </p><br>
+        <p  class="quicksand-regular2">
+          <img id="iconRedes" src="google.png">  clubeliterario@gmail.com
+        </p><BR>
+        <h5   class="quicksand-regular">
+          Redes sociais:
+        </h5>
+        <p class="quicksand-regular2">
+          <img id="iconRedes" src="x-social-media-round-icon.png">  @Clube_literario
+        </p><br>
+        <p  class="quicksand-regular2">
+          <img id="iconRedes" src="Instagram.png">  @Clubeliterarioficial
+        </p><br>
+        <h5 class="quicksand-regular">
+          Endereço: 
+        </h5>
+        <p class="quicksand-regular2">Bairro, rua e número.</p><br>
+      </footer>
     
 </body>
 </html>
