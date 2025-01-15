@@ -26,3 +26,23 @@ function openNav2() {
 function closeNav2() {
   document.getElementById("mySidenav2").style.width = "0%";
 }
+
+// função para o adm adicionar livros ao sistema
+function AdicionarLivros() {
+  var x = document.getElementById("cadLivro");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+// função para o adm atualizar os livros no sistema 
+function AlterarLivros() {
+  var x = document.getElementById("updateLivro");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
