@@ -11,18 +11,18 @@ include('protect.php')
     <title>Clube literário - Home</title>
     <link rel='stylesheet' href="bootstrap-grid.css">
     <link rel='stylesheet' href="styles.css">
-    <link rel='stylesheet' href="bootstrap copy1.css">
+    <link rel='stylesheet' href="bootstrap copy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="ClubeLiterarioProjetoFinal.js"></script>
+    <script type="text/javascript" src="ClubeLiterarioProjetoFinal2.js"></script>
     <script type="text/javascript" src="bootstrap.bundle.min.js" ></script>
 </head>
 <body class="bodyRoxo">
       <nav class="container-fluid">
         <ul class="row">
-          <a class="col-sm-3">
-            <img id="x1" class="img-fluid" src="LogoSite.png">
+          <a class="col-sm-4">
+            <img class="img-fluid" src="LogoSite3.png">
           </a>
           <li class="col-sm-2">
             <a class="nav-link" href="Home.php">Home</a>
