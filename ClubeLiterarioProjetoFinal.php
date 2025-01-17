@@ -52,12 +52,12 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         <title>Clube literário</title>
         <link rel="icon" type="image/x-icon" href="IconSite.png">
         <link rel='stylesheet' href="bootstrap-grid.css">
-        <link rel='stylesheet' href="styles.css">
-        <link rel='stylesheet' href="bootstrap copy.css">
+        <link rel='stylesheet' href="styles1.css">
+        <link rel='stylesheet' href="bootstrap copy2.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="ClubeLiterarioProjetoFinal2.js"></script>
+        <script type="text/javascript" src="ClubeLiterarioProjetoFinal1.js"></script>
         <script type="text/javascript" src="bootstrap.bundle.min.js" ></script>
         
     </head>
@@ -69,7 +69,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
                     <img class="img-fluid" src="LogoSite3.png">
                   </a>
                   <li class="col-sm-2">
-                    <a class="nav-link" href="QuemSomos.html">Quem somos?</a>
+                    <a class="nav-link" href="QuemSomos.php">Quem somos?</a>
                   </li>
                     <li class="col-sm-2">
                       <a class="nav-link" href="InscrevaSe.php">Inscreva-se</a>
@@ -86,14 +86,12 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         <h1 class="quicksand-regular" id="Entrar">Entrar</h1>
       <form method="post" action="" class="quicksand-regular2">
           <label>E-mail:</label>
-          <input class="form-control" type="text" name="email" placeholder="Nome">
+          <input class="form-control" type="text" name="email" placeholder="nome@email.com">
           <br><br>
           <label>Senha:</label>
           <input class="form-control" type="password" name="senha" placeholder="senha123">
           <br><br>
           <button type="submit" value="Submit" class="btn btn-primary">Entrar</button><br><br>
-          <button type="submit" value="Submit" class="btn btn-primary">Entrar com X<img id="x3" src="x-social-media-round-icon.png"></button><br><br>
-          <button type="submit" value="Submit" class="btn btn-primary">Entrar com Google<img id="x4" src="google.png"></button>
     </div>
   <!--Fim-->
     <h1 class="quicksand-regular">
@@ -134,7 +132,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
           </button>
         </div>
       </div><br><br>
-      <h3 class="quicksand-regular2">Leia, avalie e compartilhe! Para mais informações, nos conheça por <a id="aqui" class="quicksand-regular2" href="QuemSomos.html">aqui</a></h3><br>
+      <h3 class="quicksand-regular2">Leia, avalie e compartilhe! Para mais informações, nos conheça por <a id="aqui" class="quicksand-regular2" href="QuemSomos.php">aqui</a></h3><br>
       <footer class="container-fluid"><br>
         <h3 class="quicksand-regular">
           Informações gerais:
