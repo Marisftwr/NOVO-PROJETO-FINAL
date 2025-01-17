@@ -13,14 +13,14 @@ if(isset($_GET['id'])) {
     $livroespecifico = mysqli_fetch_assoc($query);
 
     $id = $livroespecifico['id'];
-              $nome = $livroespecifico['nome'];
-              $genero = $livroespecifico['genero'];
-              $autor = $livroespecifico['autor'];
-              $ano = $livroespecifico['ano'];
-              $numPag = $livroespecifico['numPaginas'];
-              $isbn = $livroespecifico['ISBN'];
-              $pathcapa = $livroespecifico['capa_path'];
-              $pathlivro = $livroespecifico['livro_path'];
+    $nome = $livroespecifico['nome'];
+    $genero = $livroespecifico['genero'];
+    $autor = $livroespecifico['autor'];
+    $ano = $livroespecifico['ano'];
+    $numPag = $livroespecifico['numPaginas'];
+    $isbn = $livroespecifico['ISBN'];
+    $pathcapa = $livroespecifico['capa_path'];
+    $pathlivro = $livroespecifico['livro_path'];
   } else {
     echo "Livro não encontrado!";
   }
