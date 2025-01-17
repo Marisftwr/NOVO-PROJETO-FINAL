@@ -1,4 +1,4 @@
-<?php
+<?php 
 include('protect.php');
 ?>
 <!DOCTYPE html>
@@ -194,8 +194,9 @@ include('protect.php');
             </li>
             <button type="submit" value="submit" class=" btn btn-primary">Pesquisar</button><br><br>
           </form>
+          
 
-            <br><br>
+            <br><br><br>
             <div class="row">
             <?php
             include('conexao.php');
@@ -714,8 +715,6 @@ include('protect.php');
 <?php
 }
 ?>
-
-</body>
 <footer class="container-fluid"><br>
         <h3 class="quicksand-regular">
           Informações gerais:
@@ -742,5 +741,6 @@ include('protect.php');
           Endereço: 
         </h5>
         <p class="quicksand-regular2">Bairro, rua e número.</p><br>
-</footer>
+      </footer>
+</body>
 </html>
