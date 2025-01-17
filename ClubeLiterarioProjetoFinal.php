@@ -8,7 +8,6 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
     } else if(strlen($_POST['senha'])==0) {
         echo "Preencha sua senha";
     } else {
-
         $email = $conexao->real_escape_string($_POST['email']);
         $senha = $conexao->real_escape_string($_POST['senha']);
 
@@ -86,12 +85,14 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         <h1 class="quicksand-regular" id="Entrar">Entrar</h1>
       <form method="post" action="" class="quicksand-regular2">
           <label>E-mail:</label>
-          <input class="form-control" type="text" name="email" placeholder="nome@email.com">
+          <input class="form-control" type="text" name="email" placeholder="Nome">
           <br><br>
           <label>Senha:</label>
           <input class="form-control" type="password" name="senha" placeholder="senha123">
           <br><br>
           <button type="submit" value="Submit" class="btn btn-primary">Entrar</button><br><br>
+          <button type="submit" value="Submit" class="btn btn-primary">Entrar com X<img id="x3" src="x-social-media-round-icon.png"></button><br><br>
+          <button type="submit" value="Submit" class="btn btn-primary">Entrar com Google<img id="x4" src="google.png"></button>
     </div>
   <!--Fim-->
     <h1 class="quicksand-regular">
@@ -132,7 +133,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
           </button>
         </div>
       </div><br><br>
-      <h3 class="quicksand-regular2">Leia, avalie e compartilhe! Para mais informações, nos conheça por <a id="aqui" class="quicksand-regular2" href="QuemSomos.php">aqui</a></h3><br>
+      <h3 class="quicksand-regular2">Leia, avalie e compartilhe! Para mais informações, nos conheça por <a id="aqui" class="quicksand-regular2" href="QuemSomos.html">aqui</a></h3>
       <footer class="container-fluid"><br>
         <h3 class="quicksand-regular">
           Informações gerais:
