@@ -12,11 +12,11 @@ include('protect.php')
     <link rel="icon" type="image/x-icon" href="IconSite.png">
     <link rel='stylesheet' href="bootstrap-grid.css">
     <link rel='stylesheet' href="styles1.css">
-    <link rel='stylesheet' href="bootstrap copy1.css">
+    <link rel='stylesheet' href="bootstrap copy2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="ClubeLiterarioProjetoFinal.js"></script>
+    <script type="text/javascript" src="ClubeLiterarioProjetoFinal1.js"></script>
     <script type="text/javascript" src="bootstrap.bundle.min.js" ></script>
 </head>
 <body class="bodyRoxo">
@@ -95,13 +95,13 @@ include('protect.php')
               <a class="quicksand-regular2" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img id="fechar" src="fechar.png"></a><br><br>
               <a href="PaginaDePerfil.php"><img id="ProfilePicNav" src="profile picture.jpg" class="rounded-circle me-3" alt="User Avatar"></a><br>
               <p class="quicksand-regular2"><?php echo $_SESSION['nome']; ?></p><br>
-              <form class="form-inline">
-              <input class="form-control col-sm-10" type="search" placeholder="Search" aria-label="Search">
+              <form class="form-inline" action="pesquisa.php" method="get">
+              <input class="form-control col-sm-10" type="search" placeholder="Search" aria-label="Search" name="busca">
               <button class="btn btn-outline-success" type="submit"><img id="BotaoPesquisa" src="SearchIcon1.png"></button>
               </form>
-              <a class="quicksand-regular2" href="QuemSomos.html">Quem Somos?</a><br><br>
-              <a class="quicksand-regular2" href="#">Minhas listas</a><br><br>
-              <a class="quicksand-regular2" href="#">Avaliações</a><br><br>
+              <a class="quicksand-regular2" href="QuemSomos.php">Quem Somos?</a><br><br>
+              <a class="quicksand-regular2" href="paraLer.php">Minha lista</a><br><br>
+              <a class="quicksand-regular2" href="avaliacoes.php">Avaliações</a><br><br>
               <a class="quicksand-regular2" href="configuracoes.php">Configurações</a><img id="config" src="configurações.png"><br><br>
               <a class="quicksand-regular2" href="FerramentasAdm.php">Ferramentas do Administrador</a><br><br>
               <a href="logout.php" class="quicksand-regular2">Sair</a><br><br>
@@ -118,65 +118,61 @@ include('protect.php')
           <h3 id="x17" class="quicksand-regular">
             Filtros:
           </h3>
-          <li class="col-sm-1">
-              <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Gêneros
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Romance</a></li>
-                <li><a class="dropdown-item" href="#">Ficção centífica</a></li>
-                <li><a class="dropdown-item" href="#">Comédia Romântica</a></li>
-                <li><a class="dropdown-item" href="#">Biografia</a></li>
-                <li><a class="dropdown-item" href="#">Drama</a></li> 
-                <li><a class="dropdown-item" href="#">Terror</a></li>
-                <li><a class="dropdown-item" href="#">Aventura</a></li>
-                <li><a class="dropdown-item" href="#">Mistério/Suspense</a></li>
-
-              </ul>
-            </li>
+          <form class="row gx-3 mb-6">
             <li class="col-sm-1">
-              <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Maior livro
-              </a>
-              <ul class="dropdown-menu">
-              <li><a class="dropdown-item">Menor livro</a></li>
-             </ul>
-            </li>
-            <li class="col-sm-1">
-              <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Mais lidos
-              </a>
-              <ul class="dropdown-menu">
-              <li><a class="dropdown-item">Menos lidos</a></li>
-             </ul>
-             <li class="col-sm-1">
-              <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Nacional
-              </a>
-              <ul class="dropdown-menu">
-              <li><a class="dropdown-item">Internacional</a></li>
-             </ul>
-             </li>
-             <li class="col-sm-1">
-              <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Autor
-              </a>
-             </li>
-             <li class="col-sm-1">
-              <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Ano
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"> '<' 1000 a.c. </a></li>
-                <li><a class="dropdown-item" href="#">1500-1800</a></li>
-                <li><a class="dropdown-item" href="#">1800-1850</a></li>
-                <li><a class="dropdown-item" href="#">1900-1950</a></li>
-                <li><a class="dropdown-item" href="#">1950-2000</a></li> 
-                <li><a class="dropdown-item" href="#">2000-Dias atuais</a></li>
-              </ul>
-            </li>
-            </ul>
+                <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Gêneros
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Romance</a></li>
+                  <li><a class="dropdown-item" href="#">Ficção centífica</a></li>
+                  <li><a class="dropdown-item" href="#">Comédia Romântica</a></li>
+                  <li><a class="dropdown-item" href="#">Biografia</a></li>
+                  <li><a class="dropdown-item" href="#">Drama</a></li> 
+                  <li><a class="dropdown-item" href="#">Terror</a></li>
+                  <li><a class="dropdown-item" href="#">Aventura</a></li>
+                  <li><a class="dropdown-item" href="#">Mistério/Suspense</a></li>
 
+                </ul>
+              </li>
+              <li class="col-sm-2">
+                <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Maior livro
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item">Menor livro</a></li>
+              </ul>
+              </li>
+              <li class="col-sm-2">
+                <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mais lidos
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item">Menos lidos</a></li>
+              </ul>
+              <li class="col-sm-2">
+                <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nacional
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item">Internacional</a></li>
+              </ul>
+              </li>
+              <li class="col-sm-2">
+                <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ano
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> '<' 1000 a.c. </a></li>
+                  <li><a class="dropdown-item" href="#">1500-1800</a></li>
+                  <li><a class="dropdown-item" href="#">1800-1850</a></li>
+                  <li><a class="dropdown-item" href="#">1900-1950</a></li>
+                  <li><a class="dropdown-item" href="#">1950-2000</a></li> 
+                  <li><a class="dropdown-item" href="#">2000-Dias atuais</a></li>
+                </ul>
+              </li>
+              </ul>
+          </form>
             <br><br>
             <div class="row">
             <?php
