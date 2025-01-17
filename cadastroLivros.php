@@ -9,6 +9,8 @@
     $ano = mysqli_real_escape_string($conexao, trim($_POST['ano']));
     $numPag = mysqli_real_escape_string($conexao, trim($_POST['numPag']));
     $isbn = mysqli_real_escape_string($conexao, trim($_POST['isbn']));
+    $nacionalidade = mysqli_real_escape_string($conexao, trim($_POST['nacionalidade']));
+    $sinopse = mysqli_real_escape_string($conexao, trim($_POST['sinopse']));
     $capa = mysqli_real_escape_string($conexao, trim($_POST['capa']));
     
     $sql = "select count(*) as total from livro where nome = '$nome' ";
@@ -25,7 +27,7 @@
         echo ("Arquivo enviado");
         $arquivo = $_FILES['arquivo'];        
 
-        if($arquivo['error'] && $capa['error']) {
+        if($arquivo['error']) {
             die("Falha ao enviar o arquivo");
         }
         if(($arquivo['size'] > 2097152)) {
@@ -40,7 +42,7 @@
         $pathArquivo = $pasta . $novoNomeDoArquivo . $extensaoArquivo;
         $deu_certo = move_uploaded_file($arquivo["tmp_name"], $pathArquivo );
         if($deu_certo){
-            $sql = "INSERT INTO livro (nome, genero, autor, ano, numPaginas, isbn, qtdvisualizacoes, capa_path, livro_path, data_upload) VALUES ('$nome', '$genero', '$autor', '$ano', '$numPag', '$isbn', 0, '$capa', '$pathArquivo', NOW())";
+            $sql = "INSERT INTO livro (nome, genero, autor, ano, numPaginas, isbn, nacionalidade, sinopse, qtdvisualizacoes, capa_path, livro_path, data_upload) VALUES ('$nome', '$genero', '$autor', '$ano', '$numPag', '$isbn', '$nacionalidade', '$sinopse', 0, '$capa', '$pathArquivo', NOW())";
             echo "<p>Arquivo enviado com sucesso! Para acessá-lo clique aqui: <a href=\"upload/livros/$novoNomeDoArquivo.$extensaoArquivo\">Clique aqui</a></p>";
         } else{
             echo("Falha ao enviar arquivo");
