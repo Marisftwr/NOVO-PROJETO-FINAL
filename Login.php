@@ -25,10 +25,17 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
                 session_start();
             }
 
-            $_SESSION['user'] = $usuario['id'];
-            $_SESSION['name'] = $usuario['nome'];
+            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['nome'] = $usuario['nome'];
+            $_SESSION['nomeusuario'] = $usuario['nomedeusuario'];
 
-            header("Location: Home.php");
+            if($_SESSION['id'] == 1) {
+              header("Location: HomeAdm.php");
+            } elseif ($_SESSION['id'] == 2) {
+              header("Location: HomeAdm.php");
+            } else {
+              header("Location: Home.php");
+            }            
             
         } else{
             echo "Falha ao logar! Email ou senha incorretos";
