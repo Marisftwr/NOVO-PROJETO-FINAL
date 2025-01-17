@@ -91,10 +91,10 @@ if(isset($_GET['id'])) {
           <div class="row gx-3 mb-3">
              <div class="col-md-6">
                 <h3 id="x17" class="quicksand-regular">
-                  Descrição:
+                  Sinopse:
                 </h3>
                 <h5 id="x17" class="quicksand-regular2">
-                Descrição sobre o livrodiidhifhwhwheduwhduoabndco<br>fniperfnpnp
+                <?php echo $sinopse ?>
                 </h5>
              </div>
             <div class="col-md-6">
