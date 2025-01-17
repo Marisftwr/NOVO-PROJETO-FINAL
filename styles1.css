@@ -16,7 +16,7 @@ a {font-family: 'Noto Serif Ahom',serif;
 
 #aqui{color:#e7b74f}
 
-#aqui:hover {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+#aqui:hover {text-decoration: underline;}
 
 .bodyHome {background-image: url(Background.png);
       background-repeat: no-repeat;
@@ -102,17 +102,18 @@ hr{
       text-align: justify;}
 /*Fim de "para alinhar o texto á esquerda*/
 /*Div a ser mostrada quando apertar no link de entrar*/
-#x7 {min-height: 600px;
-     min-width: 500px;
-     max-height: 500px;
-     max-width: 400px;
+#x7 {min-height: 460px;
+     min-width: 350px;
+     max-height: 460px;
+     max-width: 350px;
      background-color:#57245b;
      margin: auto;
      text-align: center;
      border-radius: 25px;
      display: none;
      }
-   
+
+#x7:hover {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 #Entrar {padding-right: 30px;
         }
@@ -212,61 +213,8 @@ text-align:center ;}
      
 #x14:hover { border: 2px solid rgba(221, 185, 23, 0.801);  }
 
-     /*Parte de comentários do livro em específico
-.nome {font-size: 22px;
-       font-family: 'quicksand', sans-serif;
-       font-style: bold;
-       color: aliceblue;
-}
+     /*Parte de comentários do livro em específico*/
 
-.post-comment .list{
-     background-color: #471b53;
-     border-radius: 15px;
-     box-shadow: 0 2px 2px #100613
-}
-
-.comment-box .user .image img{
-     height:20%;
-     width:20%;
-     border-radius: 50%
-}
-.comment-box textarea {
-     background-color: #f3e0f8;
-     border-radius: 15px;
-     box-shadow: 0 2px 2px #100613;
-}
-
-.user .user-image .img {width: 25px;
-     height: 25px;
-     border-radius: 50%
-}
-
-.image {width: 250px;
-     height: 250px}
-
-textarea {border-radius: 10px;}
-
-#commentContent {
-     padding-right: 300px;
-}
-.card-text{
-     font-family: 'Quicksand', sans-serif ;
-}
-
-.divComment {
-     border-radius: 10px;
-     background-color: #4b1b4d;
-     height: auto;
-     margin-bottom: 50px;
-     width: 1000px;
-
-
-}
-
-#x18 {
-     background-color: #9568a0;
-
-}*/
 .comment-section {
      max-width: 800px;
      margin: 2rem auto;
@@ -552,3 +500,45 @@ footer {
 #DivAv {
      border: 1px solid #59465f;
 }
+
+/*Para ler*/
+#PesqLivros {
+     background-color: #7e6886;
+     height:50%;
+     width: 70%;
+     text-align: right;
+     border-radius: 20px;
+     display: none;
+     margin: auto;
+
+}
+#PesqLivros:hover {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+#BotaoPesquisa2 {
+     margin-inline-end: 37%;
+
+}
+/*Ferramentas Adm*/
+
+#btn-group button {
+          align-items: center;
+          background-color: #70497c; /* Green background */
+          border: 1px solid #341035; /* Green border */
+          color: rgb(224, 201, 125); /* White text */
+          padding: 10px 24px; /* Some padding */
+          cursor: pointer; /* Pointer/hand icon */
+          border-radius: 5px;
+          
+        }
+#btn-group button:hover {
+          background-color: #4e1c4e;
+          color:#fff
+        }
+
+#btn-group {
+     margin-left: 20%;
+}
+
+#divCads {background-color: #1f0d24;
+          border-radius: 20px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     }
