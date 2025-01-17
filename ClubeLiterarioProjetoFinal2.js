@@ -14,7 +14,7 @@ function openNav() {
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0%";
+  document.getElementById("mySidenav").style.width = "0px";
 }
 
 // função sidbar da página de perfil //
@@ -24,7 +24,7 @@ function openNav2() {
 }
 
 function closeNav2() {
-  document.getElementById("mySidenav2").style.width = "0%";
+  document.getElementById("mySidenav2").style.width = "0px";
 }
 
 // função para o adm adicionar livros ao sistema
@@ -40,6 +40,16 @@ function AdicionarLivros() {
 // função para o adm atualizar os livros no sistema 
 function AlterarLivros() {
   var x = document.getElementById("updateLivro");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+//funcção para div de pesquisar livros (página para ler)//
+function addLista() {
+  var x = document.getElementById("PesqLivros");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
