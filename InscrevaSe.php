@@ -7,9 +7,9 @@ session_start()
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscreva-se</title>
-    <link rel='stylesheet' href="styles.css">
+    <link rel='stylesheet' href="styles1.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap copy.css">
+    <link rel="stylesheet" href="bootstrap copy2.css">
     <link rel="stylesheet" href="bootstrap-grid.css"> 
 </head>
 <!--Modificar seriamente-->
@@ -35,13 +35,8 @@ session_start()
         <input class="form-control" type="password" name="Senha" placeholder="senha123">
         <br><br>
         <button type="submit" value="Submit" class=" btn btn-primary">Inscrever-se</button><br><br>
-        <button type="submit" value="Submit" class="btn btn-primary">Inscrever-se com X<img id="x3" src="x-social-media-round-icon.png"></button>
-        <button type="submit" value="Submit" class="btn btn-primary">Inscrever-se com G<img id="x4" src="google.png"></button>
-
         
     </form><br>
-        <button type="submit" value="Submit" class=" btn btn-primary">Inscrever-se</button>
-    </div>
     </div>
 
     <br><br>
