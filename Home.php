@@ -12,11 +12,11 @@ include('protect.php');
     <link rel="icon" type="image/x-icon" href="IconSite.png">
     <link rel='stylesheet' href="bootstrap-grid.css">
     <link rel='stylesheet' href="styles1.css">
-    <link rel='stylesheet' href="bootstrap copy1.css">
+    <link rel='stylesheet' href="bootstrap copy2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="ClubeLiterarioProjetoFinal.js"></script>
+    <script type="text/javascript" src="ClubeLiterarioProjetoFinal1.js"></script>
     <script type="text/javascript" src="bootstrap.bundle.min.js" ></script>
 </head>
 <body class="bodyRoxo">
@@ -99,9 +99,9 @@ include('protect.php');
               <input class="form-control col-sm-10" type="search" placeholder="Search" aria-label="Search" name="busca">
               <button class="btn btn-outline-success" type="submit"><img id="BotaoPesquisa" src="SearchIcon1.png"></button>
               </form>
-              <a class="quicksand-regular2" href="QuemSomos.html">Quem Somos?</a><br><br>
-              <a class="quicksand-regular2" href="#">Minhas listas</a><br><br>
-              <a class="quicksand-regular2" href="#">Avaliações</a><br><br>
+              <a class="quicksand-regular2" href="QuemSomos.php">Quem Somos?</a><br><br>
+              <a class="quicksand-regular2" href="paraLer.php">Minha lista</a><br><br>
+              <a class="quicksand-regular2" href="avaliacoes.php">Avaliações</a><br><br>
               <a class="quicksand-regular2" href="configuracoes.php">Configurações</a><img id="config" src="configurações.png"><br><br>
               <a href="logout.php" class="quicksand-regular2">Sair</a><br><br>
             </div>
@@ -695,6 +695,8 @@ include('protect.php');
 <?php
 }
 ?>
+
+</body>
 <footer class="container-fluid"><br>
         <h3 class="quicksand-regular">
           Informações gerais:
@@ -721,6 +723,5 @@ include('protect.php');
           Endereço: 
         </h5>
         <p class="quicksand-regular2">Bairro, rua e número.</p><br>
-      </footer>
-</body>
+</footer>
 </html>
