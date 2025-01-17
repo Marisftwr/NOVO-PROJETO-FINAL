@@ -10,12 +10,12 @@ include('protect.php')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="IconSite.png">
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles.css">
-    <link rel='stylesheet' href="bootstrap copy.css">
+    <link rel='stylesheet' href="styles1.css">
+    <link rel='stylesheet' href="bootstrap copy2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="ClubeLiterarioProjetoFinal2.js"></script>
+    <script type="text/javascript" src="ClubeLiterarioProjetoFinal1.js"></script>
     <script type="text/javascript" src="bootstrap.bundle.min.js" ></script>
     
     <title>Perfil</title>
@@ -61,7 +61,7 @@ include('protect.php')
               <input class="form-control col-sm-10" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit"><img id="BotaoPesquisa" src="SearchIcon1.png"></button>
               </form>
-                <a class="quicksand-regular2" href="QuemSomos.html">Quem Somos?</a><br><br>
+                <a class="quicksand-regular2" href="QuemSomos.php">Quem Somos?</a><br><br>
                 <a class="quicksand-regular2" href="paraLer.php">Minha Lista</a><br><br>
                 <a class="quicksand-regular2" href="avaliacoes.php">Avaliações</a><br><br>
                 <a class="quicksand-regular2" href="EditarPerfil.php">Editar Perfil</a><br><br>
