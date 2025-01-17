@@ -1,3 +1,48 @@
+<?php
+include ('conexao.php');
+
+if(isset($_POST['email']) || isset($_POST['senha'])) {
+    
+    if(strlen($_POST['email'])==0) {
+        echo "Preencha seu email";
+    } else if(strlen($_POST['senha'])==0) {
+        echo "Preencha sua senha";
+    } else {
+
+        $email = $conexao->real_escape_string($_POST['email']);
+        $senha = $conexao->real_escape_string($_POST['senha']);
+
+        $sql_code = "SELECT * FROM usuarios WHERE email='$email' AND senha='$senha'";
+        $sql_query = $conexao->query($sql_code) or die("Falha na execução do código SQL: ".$conexao->error);
+
+        $quantidade=$sql_query->num_rows;
+
+        if($quantidade==1){
+
+            $usuario = $sql_query->fetch_assoc();
+
+            if(!isset($_SESSION)) {
+                session_start();
+            }
+
+            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['nome'] = $usuario['nome'];
+            $_SESSION['nomeusuario'] = $usuario['nomedeusuario'];
+
+            if($_SESSION['id'] == 1) {
+              header("Location: HomeAdm.php");
+            } elseif ($_SESSION['id'] == 2) {
+              header("Location: HomeAdm.php");
+            } else {
+              header("Location: Home.php");
+            }            
+            
+        } else{
+            echo "Falha ao logar! Email ou senha incorretos";
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +59,12 @@
         <title>Clube literário</title>
         <link rel="icon" type="image/x-icon" href="IconSite.png">
         <link rel='stylesheet' href="bootstrap-grid.css">
-        <link rel='stylesheet' href="styles.css">
-        <link rel='stylesheet' href="bootstrap copy.css">
+        <link rel='stylesheet' href="styles1.css">
+        <link rel='stylesheet' href="bootstrap copy2.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="ClubeLiterarioProjetoFinal2.js" ></script>
+        <script type="text/javascript" src="ClubeLiterarioProjetoFinal1.js" ></script>
         <script type="text/javascript" src="bootstrap.bundle.min.js" ></script>
         
     </head>
@@ -31,7 +76,7 @@
                     <img class="img-fluid" src="LogoSite3.png">
                   </a>
                   <li class="col-sm-2">
-                    <a class="nav-link" href="QuemSomos.html">Quem somos?</a>
+                    <a class="nav-link" href="QuemSomos.php">Quem somos?</a>
                   </li>
                     <li class="col-sm-2">
                       <a class="nav-link" href="InscrevaSe.html">Inscreva-se</a>
@@ -56,8 +101,7 @@
     <label>Senha:</label>
     <input class="form-control" type="text" name="Senha" placeholder="senha123">
     <br><br>
-    <button type="submit" value="Submit" class="btn btn-primary">Entrar com X<img id="x3" src="x-social-media-round-icon.png"></button><br><br>
-    <button type="submit" value="Submit" class="btn btn-primary">Entrar com Google<img id="x4" src="google.png"></button>
+    <button type="submit" value="Submit" class="btn btn-primary">Entrar</button><br><br>
 </div>
   <!--Fim-->
 <!--Body da página-->
@@ -146,7 +190,7 @@
         livros para ler e livros que o usuário está lendo.</p><br>
         <div class="container-fluid">
           <img src="PrintPerfil.png" id="printInsc">
-        </div>
+        </div><br>
     </div>
 </body>
 <footer class="container-fluid"><br>
