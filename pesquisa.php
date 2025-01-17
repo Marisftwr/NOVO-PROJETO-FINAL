@@ -11,12 +11,12 @@ include('protect.php');
     <title>Clube literário - Home</title>
     <link rel="icon" type="image/x-icon" href="IconSite.png">
     <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="styles1.css">
+    <link rel='stylesheet' href="styles.css">
     <link rel='stylesheet' href="bootstrap copy1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="ClubeLiterarioProjetoFinal.js"></script>
+    <script type="text/javascript" src="ClubeLiterarioProjetoFinal2.js"></script>
     <script type="text/javascript" src="bootstrap.bundle.min.js" ></script>
 </head>
 <body class="bodyRoxo">
@@ -117,89 +117,167 @@ include('protect.php');
           <h3 id="x17" class="quicksand-regular">
             Filtros:
           </h3>
-          <li class="col-sm-1">
-              <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Gêneros
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Romance</a></li>
-                <li><a class="dropdown-item" href="#">Ficção centífica</a></li>
-                <li><a class="dropdown-item" href="#">Comédia Romântica</a></li>
-                <li><a class="dropdown-item" href="#">Biografia</a></li>
-                <li><a class="dropdown-item" href="#">Drama</a></li> 
-                <li><a class="dropdown-item" href="#">Terror</a></li>
-                <li><a class="dropdown-item" href="#">Aventura</a></li>
-                <li><a class="dropdown-item" href="#">Mistério/Suspense</a></li>
-
+          <form class="row gx-3 mb-6" method="get" action="pesquisa.php">
+            <li class="col-sm-1">
+                <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Gêneros
+                </a>
+                <ul class="dropdown-menu">
+                  <label for="romance" class="dropdown-item">Romance</label>
+                  <input type="radio" class="dropdown-item" id="romance" name="genero" value="Romance" style="text-align: justify">
+                  <label for="ficcient" class="dropdown-item">Ficção Científica</label>
+                  <input type="radio" class="dropdown-item" id="ficcient" name="genero" value="Ficção Científica">
+                  <label for="poesia" class="dropdown-item">Poesia</label>
+                  <input type="radio" class="dropdown-item" id="poesia" name="genero" value="Poesia">
+                  <label for="fantasia" class="dropdown-item">Fantasia</label>
+                  <input type="radio" class="dropdown-item" id="biogradia" name="genero" value="Fantasia">
+                  <label for="drama" class="dropdown-item">Drama</label>
+                  <input type="radio" class="dropdown-item" id="drama" name="genero" value="Drama">
+                  <label for="terror" class="dropdown-item">Terror</label>
+                  <input type="radio" class="dropdown-item" id="terror" name="genero" value="Terror">
+                  <label for="aventura" class="dropdown-item">Aventura</label>
+                  <input type="radio" class="dropdown-item" id="aventura" name="genero" value="Aventura">
+                  <label for="misterio" class="dropdown-item">Mistério</label>
+                  <input type="radio" class="dropdown-item" id="misterio" name="genero" value="Misterio">
+                </ul>
+              </li>
+              <li class="col-sm-2">
+                <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nacionalidade
+                </a>
+                <ul class="dropdown-menu">
+                <label for="nacional" class="dropdown-item">Nacional</label>
+                <input type="radio" class="dropdown-item" id="nacional" name="nacionalidade" value="Nacional" style="text-align: justify">
+                <label for="internacional" class="dropdown-item">Internacional</label>
+                <input type="radio" class="dropdown-item" id="romance" name="nacionalidade" value="Internacional" style="text-align: justify">
+              </ul>
+              </li>
+              <li class="col-sm-2">
+                <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ano
+                </a>
+                <ul class="dropdown-menu">
+                  <label for="ate1800" class="dropdown-item">até 1800</label>
+                  <input type="radio" class="dropdown-item" id="ate1800" name="ano" value="ano<1800" style="text-align: justify">
+                  <label for="ate1900" class="dropdown-item">1800-1900</label>
+                  <input type="radio" class="dropdown-item" id="ate1900" name="ano" value="1800>ano AND ano<1900" style="text-align: justify">
+                  <label for="ate1950" class="dropdown-item">1900-1950</label>
+                  <input type="radio" class="dropdown-item" id="ate1950" name="ano" value="1900>=ano AND ano<1950" style="text-align: justify">
+                  <label for="ate2000" class="dropdown-item">1950-2000</label>
+                  <input type="radio" class="dropdown-item" id="ate2000" name="ano" value="ano>=1950 AND ano<2000" style="text-align: justify"> 
+                  <label for="depois2000" class="dropdown-item">2000-Dias atuais</label>
+                  <input type="radio" class="dropdown-item" id="depois2000" name="ano" value="ano<=2000" style="text-align: justify">
+                </ul>
+              </li>
+              <li class="col-sm-2">
+                <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tamanho
+                </a>
+                <ul class="dropdown-menu">
+                <label for="maiorlivro" class="dropdown-item">Maior Livro</label>
+                <input type="radio" class="dropdown-item" id="maiorlivro" name="tamanho" value="ORDER BY numPaginas DESC LIMIT 10" style="text-align: justify">
+                <label for="menorlivro" class="dropdown-item">Menor Livro</label>
+                <input type="radio" class="dropdown-item" id="menorlivro" name="tamanho" value="ORDER BY numPaginas ASC LIMIT 1 " style="text-align: justify">
+              </ul>
+              </li>
+              <li class="col-sm-2">
+                <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Popularidade
+                </a>
+                <ul class="dropdown-menu">
+                <label for="maislidos" class="dropdown-item">Mais Lidos</label>
+                <input type="radio" class="dropdown-item" id="maislidos" name="popularidade" value="ORDER BY qtdvisualizacoes DESC LIMIT 10 " style="text-align: justify">
+                <label for="romance" class="dropdown-item">Menos Lidos</label>
+                <input type="radio" class="dropdown-item" id="menoslidos" name="popularidade" value="ORDER BY qtdvisualizacoes ASC LIMIT 10 " style="text-align: justify">
+              </ul>
               </ul>
             </li>
-            <li class="col-sm-1">
-              <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Maior livro
-              </a>
-              <ul class="dropdown-menu">
-              <li><a class="dropdown-item">Menor livro</a></li>
-             </ul>
-            </li>
-            <li class="col-sm-1">
-              <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Mais lidos
-              </a>
-              <ul class="dropdown-menu">
-              <li><a class="dropdown-item">Menos lidos</a></li>
-             </ul>
-             <li class="col-sm-1">
-              <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Nacional
-              </a>
-              <ul class="dropdown-menu">
-              <li><a class="dropdown-item">Internacional</a></li>
-             </ul>
-             </li>
-             <li class="col-sm-1">
-              <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Autor
-              </a>
-             </li>
-             <li class="col-sm-1">
-              <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Ano
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"> '<' 1000 a.c. </a></li>
-                <li><a class="dropdown-item" href="#">1500-1800</a></li>
-                <li><a class="dropdown-item" href="#">1800-1850</a></li>
-                <li><a class="dropdown-item" href="#">1900-1950</a></li>
-                <li><a class="dropdown-item" href="#">1950-2000</a></li> 
-                <li><a class="dropdown-item" href="#">2000-Dias atuais</a></li>
-              </ul>
-            </li>
-            </ul>
+            <button type="submit" value="submit" class=" btn btn-primary">Pesquisar</button><br><br>
+          </form>
 
             <br><br>
             <div class="row">
 
 <?php
-include('conexao.php');
-$pesquisa = mysqli_real_escape_string($conexao, $_GET['busca']);
-$sql_code = "SELECT * FROM livro WHERE nome LIKE '%$pesquisa%' or autor LIKE '%$pesquisa%'";
-$sql_query = mysqli_query($conexao, $sql_code) or die('Erro ao consultar!' . $mysqli->error);
-             
-if($sql_query->num_rows==0) {
-    echo "Nenhum resultado encontrado";
+
+if(isset($_GET['busca'])){
+  include('conexao.php');
+  $pesquisa = mysqli_real_escape_string($conexao, $_GET['busca']);
+  $sql_code = "SELECT * FROM livro WHERE nome LIKE '%$pesquisa%' or autor LIKE '%$pesquisa%'";
+  $sql_query = mysqli_query($conexao, $sql_code) or die('Erro ao consultar!' . $mysqli->error);
+              
+  if($sql_query->num_rows==0) {
+      echo "Nenhum resultado encontrado";
+  } else {
+      while ($dados = $sql_query->fetch_assoc()) {
+      ?>
+      <div class="col-lg">
+          <div id="cardLivro" class="card" style="width: 15rem;">
+              <img id="fotoLivro" class="card-img-top" src="<?php echo $dados['capa_path'];?>" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title" id="nomeLivro"><?php echo $dados['nome'];?></h5>
+                  <a href="LivroEspecifico.php?id=<?php echo $dados['id']; ?>" class="btn btn-primary">Veja mais</a>
+              </div>
+          </div>
+      </div>
+  <?php
+      }
+  
+  }
+  ?>
+  <?php
 } else {
-    while ($dados = $sql_query->fetch_assoc()) {
-    ?>
-    <div class="col-lg">
-        <div id="cardLivro" class="card" style="width: 15rem;">
-            <img id="fotoLivro" class="card-img-top" src="<?php echo $dados['capa_path'];?>" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title" id="nomeLivro"><?php echo $dados['nome'];?></h5>
-                <a href="LivroEspecifico.php?id=<?php echo $dados['id']; ?>" class="btn btn-primary">Veja mais</a>
-            </div>
-        </div>
-    </div>
-<?php
+  include('conexao.php');
+  $pesquisa = "SELECT * FROM livro ";
+
+  if(!empty($_GET)){
+    $pesquisa .= " WHERE (1=1) ";
+    if(isset($_GET['genero'])){
+      $genero = $_GET['genero'];
+      $pesquisa .=  "AND genero = '$genero' ";
     }
+
+    if(isset($_GET['nacionalidade'])){
+      $nacionalidade = $_GET['nacionalidade'];
+      $pesquisa .= "AND nacionalidade =  '$nacionalidade' ";
+    }
+
+    if(isset($_GET['ano'])) {
+      $ano = $_GET['ano'];
+      $pesquisa .= "AND $ano ";
+    }
+
+    if(isset($_GET['tamanho'])){
+      $tamanho = $_GET['tamanho'];
+      $pesquisa .= $tamanho;
+    }
+
+    if(isset($_GET['popularidade'])){
+      $popularidade = $_GET['popularidade'];
+      $pesquisa .= $popularidade;
+    }
+
+    $sql_query = mysqli_query($conexao, $pesquisa) or die('Erro ao consultar!' . $mysqli->error);
+
+    if($sql_query->num_rows==0) {
+      echo "Nenhum resultado encontrado";
+  } else {
+      while ($dados = $sql_query->fetch_assoc()) {
+      ?>
+      <div class="col-lg">
+          <div id="cardLivro" class="card" style="width: 15rem;">
+              <img id="fotoLivro" class="card-img-top" src="<?php echo $dados['capa_path'];?>" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title" id="nomeLivro"><?php echo $dados['nome'];?></h5>
+                  <a href="LivroEspecifico.php?id=<?php echo $dados['id']; ?>" class="btn btn-primary">Veja mais</a>
+              </div>
+          </div>
+      </div>
+  <?php
+      }
+  
+  }
+  }
 }
+
 ?>
