@@ -118,44 +118,39 @@ include('protect.php')
           <h3 id="x17" class="quicksand-regular">
             Filtros:
           </h3>
-          <form class="row gx-3 mb-6">
+          <form class="row gx-3 mb-6" method="get" action="pesquisa.php">
             <li class="col-sm-1">
                 <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Gêneros
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Romance</a></li>
-                  <li><a class="dropdown-item" href="#">Ficção centífica</a></li>
-                  <li><a class="dropdown-item" href="#">Comédia Romântica</a></li>
-                  <li><a class="dropdown-item" href="#">Biografia</a></li>
-                  <li><a class="dropdown-item" href="#">Drama</a></li> 
-                  <li><a class="dropdown-item" href="#">Terror</a></li>
-                  <li><a class="dropdown-item" href="#">Aventura</a></li>
-                  <li><a class="dropdown-item" href="#">Mistério/Suspense</a></li>
-
+                  <label for="romance" class="dropdown-item">Romance</label>
+                  <input type="radio" class="dropdown-item" id="romance" name="genero" value="Romance" style="text-align: justify">
+                  <label for="ficcient" class="dropdown-item">Ficção Científica</label>
+                  <input type="radio" class="dropdown-item" id="ficcient" name="genero" value="Ficção Científica">
+                  <label for="poesia" class="dropdown-item">Poesia</label>
+                  <input type="radio" class="dropdown-item" id="poesia" name="genero" value="Poesia">
+                  <label for="fantasia" class="dropdown-item">Fantasia</label>
+                  <input type="radio" class="dropdown-item" id="biogradia" name="genero" value="Fantasia">
+                  <label for="drama" class="dropdown-item">Drama</label>
+                  <input type="radio" class="dropdown-item" id="drama" name="genero" value="Drama">
+                  <label for="terror" class="dropdown-item">Terror</label>
+                  <input type="radio" class="dropdown-item" id="terror" name="genero" value="Terror">
+                  <label for="aventura" class="dropdown-item">Aventura</label>
+                  <input type="radio" class="dropdown-item" id="aventura" name="genero" value="Aventura">
+                  <label for="misterio" class="dropdown-item">Mistério</label>
+                  <input type="radio" class="dropdown-item" id="misterio" name="genero" value="Misterio">
                 </ul>
               </li>
               <li class="col-sm-2">
                 <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Maior livro
+                Nacionalidade
                 </a>
                 <ul class="dropdown-menu">
-                <li><a class="dropdown-item">Menor livro</a></li>
-              </ul>
-              </li>
-              <li class="col-sm-2">
-                <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Mais lidos
-                </a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item">Menos lidos</a></li>
-              </ul>
-              <li class="col-sm-2">
-                <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Nacional
-                </a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item">Internacional</a></li>
+                <label for="nacional" class="dropdown-item">Nacional</label>
+                <input type="radio" class="dropdown-item" id="nacional" name="nacionalidade" value="Nacional" style="text-align: justify">
+                <label for="internacional" class="dropdown-item">Internacional</label>
+                <input type="radio" class="dropdown-item" id="romance" name="nacionalidade" value="Internacional" style="text-align: justify">
               </ul>
               </li>
               <li class="col-sm-2">
@@ -163,17 +158,46 @@ include('protect.php')
                   Ano
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"> '<' 1000 a.c. </a></li>
-                  <li><a class="dropdown-item" href="#">1500-1800</a></li>
-                  <li><a class="dropdown-item" href="#">1800-1850</a></li>
-                  <li><a class="dropdown-item" href="#">1900-1950</a></li>
-                  <li><a class="dropdown-item" href="#">1950-2000</a></li> 
-                  <li><a class="dropdown-item" href="#">2000-Dias atuais</a></li>
+                  <label for="ate1800" class="dropdown-item">até 1800</label>
+                  <input type="radio" class="dropdown-item" id="ate1800" name="ano" value="ano<1800" style="text-align: justify">
+                  <label for="ate1900" class="dropdown-item">1800-1900</label>
+                  <input type="radio" class="dropdown-item" id="ate1900" name="ano" value="1800>ano AND ano<1900" style="text-align: justify">
+                  <label for="ate1950" class="dropdown-item">1900-1950</label>
+                  <input type="radio" class="dropdown-item" id="ate1950" name="ano" value="1900>=ano AND ano<1950" style="text-align: justify">
+                  <label for="ate2000" class="dropdown-item">1950-2000</label>
+                  <input type="radio" class="dropdown-item" id="ate2000" name="ano" value="ano>=1950 AND ano<2000" style="text-align: justify"> 
+                  <label for="depois2000" class="dropdown-item">2000-Dias atuais</label>
+                  <input type="radio" class="dropdown-item" id="depois2000" name="ano" value="ano<=2000" style="text-align: justify">
                 </ul>
               </li>
+              <li class="col-sm-2">
+                <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tamanho
+                </a>
+                <ul class="dropdown-menu">
+                <label for="maiorlivro" class="dropdown-item">Maior Livro</label>
+                <input type="radio" class="dropdown-item" id="maiorlivro" name="tamanho" value="ORDER BY numPaginas DESC LIMIT 10" style="text-align: justify">
+                <label for="menorlivro" class="dropdown-item">Menor Livro</label>
+                <input type="radio" class="dropdown-item" id="menorlivro" name="tamanho" value="ORDER BY numPaginas ASC LIMIT 1 " style="text-align: justify">
               </ul>
+              </li>
+              <li class="col-sm-2">
+                <a id="TamanhoFilt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Popularidade
+                </a>
+                <ul class="dropdown-menu">
+                <label for="maislidos" class="dropdown-item">Mais Lidos</label>
+                <input type="radio" class="dropdown-item" id="maislidos" name="popularidade" value="ORDER BY qtdvisualizacoes DESC LIMIT 10 " style="text-align: justify">
+                <label for="romance" class="dropdown-item">Menos Lidos</label>
+                <input type="radio" class="dropdown-item" id="menoslidos" name="popularidade" value="ORDER BY qtdvisualizacoes ASC LIMIT 10 " style="text-align: justify">
+              </ul>
+              </ul>
+            </li>
+            <button type="submit" value="submit" class=" btn btn-primary">Pesquisar</button><br><br>
           </form>
-            <br><br>
+          
+
+            <br><br><br>
             <div class="row">
             <?php
             include('conexao.php');
